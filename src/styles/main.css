@@ -1,5 +1,6 @@
+/*Definição da paleta de cores*/
 :root {
-    --cor-fundo: #A0A0A0;
+    --cinza-claro: #A0A0A0;
     --azul: #0A8EF2; 
     --azul-claro: #22F2DD;
     --branco: #ffffff;
@@ -11,5 +12,27 @@
     --roxo-escuro: #0A14F2;
     --roxo-claro: #0F15A6;
     --verde: #00A695; 
-    --verde-claro: #6FF23A;   
+    --verde-claro: #6FF23A;  
+    
+    /*Cores principais*/
+    --cor-principal-usuario:var(--laranja-principal);
+    --cor-principal-adm:var(--verde);
+    --cor-botoes:var(--branco);
+    --cor-selecao:var(--azul);
+    --cor-fundo:var(--cinza-claro);
+}
+
+/*Configurações padrão da página(margem, espaço entre conteúdos e borda)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Definindo cor de fundo, alinhamento de conteúdo e tipo de display*/
+body{
+    background-color: var(--cor-fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
