@@ -1,13 +1,23 @@
 a {
     font-size: 1.4rem;
     text-align: center;
-}
-h1{
-    text-align: center;
+    color: var(--cor-texto-primaria);
 }
 
-a:link a:visited a:active {
-    color: var(--cor-texto-primaria);
+.barra-lateral-adm{
+    background-color: var(--cor-principal-adm);
+    
+}
+
+h1{
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+    padding: 1vw 4vh 1vw 4vh;
 }
 
 
