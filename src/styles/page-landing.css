@@ -1,0 +1,27 @@
+a {
+    font-size: 1.4rem;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+a:link a:visited a:active {
+    color: var(--cor-texto-primaria);
+}
+
+
+
+
+
+
+/*Cores principais
+--cor-principal-usuario:var(--laranja-principal);
+    --cor-principal-adm:var(--verde);
+    --cor-botoes:var(--branco);
+    --cor-selecao:var(--azul);
+    --cor-fundo:var(--branco);
+    --cor-texto-primaria: var(--branco);
+    --cor-texto-selecionado-adm: var(--cor-principal-adm);
+    --cor-texto-selecionado-usr: var(--cor-principal-usuario);
+*/
