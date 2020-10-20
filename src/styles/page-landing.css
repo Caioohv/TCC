@@ -2,7 +2,16 @@ a {
     font-size: 1.4rem;
     text-align: center;
     color: var(--cor-texto-primaria);
+    text-decoration: none;
+    transition: 0.2s;
 }
+
+a:hover{
+    color: var(--cor-texto-selecionado-adm);
+    background-color: var(--cor-botoes);
+}
+
+
 
 .barra-lateral-adm{
     background-color: var(--cor-principal-adm);
