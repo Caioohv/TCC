@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Cadastrar Caixa</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/src/styles/main.css'>
-</head>
-<body>
-    <div class="barra-lateral-adm">
-        
-    </div>
-</body>
-</html>
+<html lang="en">
 
-botões
--cadastrar 
--limpar
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Caixa</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/caixas.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <br>
+    <div class="textoCentral">
+        <form action="" method="POST" name="fdmCadastro">
+            <p>Dados Básicos</p>
+            <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
+            <input type="text" name="txtEndereco" id="txtEndereco" class="caixaTexto" placeholder="Endereço">
+            
+            <p>Localizações</p>
+            <input type="text" name="txtX" id="txtX" class="caixaTexto" placeholder="Localização X">
+            <input type="text" name="txtY" id="txtY" class="caixaTexto" placeholder="Localização Y">
+            
+            <p>Horários: </p>
+            <input type="time" name="hrrAbrir" id="hrrAbrir" class="caixaTexto">
+            <input type="time" name="hrrFechar" id="hrrFechar" class="caixaTexto">
+            
+            
+            
+            
+
+
+    </div>
+    <div class="fbotao">
+        <input type="submit" value="Cadastrar" class="btn btn-outline-primary">
+    </div>
+    </form>
+</body>
+
+</html>
