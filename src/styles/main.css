@@ -16,6 +16,7 @@
     --verde-claro: #6FF23A;  
     
     /*Cores principais*/
+    --cor-texto-secundario: var(--preto);
     --cor-principal-usuario:var(--laranja-principal);
     --cor-principal-adm:var(--verde);
     --cor-botoes:var(--branco);
