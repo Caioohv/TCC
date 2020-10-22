@@ -1,0 +1,19 @@
+Acho interessante a gente criar pastas tipo
+
+/html
+/js
+/css
+...
+
+e dentro organizar
+tipo
+
+/html/admin
+/html/admin/crud
+/html/caixa
+/html/caixa/crud
+...
+
+dai com o tempo, q a gnt for colocando mais coisa, fica mais facil de organizar... oq acha?
+
+

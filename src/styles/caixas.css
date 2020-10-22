@@ -1,81 +1,107 @@
-a {
-    font-size: 1.6rem;
-    text-align: center;
-    color: var(--cor-texto-primaria);
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-a:hover{
-    color: var(--cor-texto-selecionado-adm);
-    background-color: var(--cor-botoes);
-}
-
-h1{
-    text-align: center;
-    color: var(--cor-principal-adm);
-    
-    
-}
-
-p {
-    text-align: center;
-    justify-content: center;
-    padding: 1vw 4vh 1vw 4vh;
-}
-
-.textoCentral{
-    background-color: var(--cor---cor-fundo);
-    text-align: center;
-    justify-content: center;
-}
-
-.caixaTexto{
-    width: 35vh;
-    margin: 0 1.2vh 0 1.2vh;
-}
-
-.fbotao{
-    text-align: center;
-    margin: 4vh;
-}
-
-body{
-    display: initial;
-    justify-content: center;
-    align-items: center;
-}
-
-input, textarea, button{
-    font-size: 1.6rem;
+body textarea{
     font-family: Poppins;
-    color: var(--cor-texto-secundario);
 }
-p{
-    color: var(--cor-texto-secundario);
+
+
+
+.sidenav {
+    height: 100%; /* altura máxima */
+    width: 17vw; /* largura da sidebar */
+    position: fixed; /* a sidebar fica fixa */
+    z-index: 1; /* aparece acima de tudo */
+    top: 0; 
+    left: 0;
+    background-color: var(--cor-principal-adm); /* cor */
+    overflow-x: hidden; /* sem scroll */
+    padding-top: 20px;
+    text-align: center;
 }
-.container-botao{
+
+/* links */
+.sidenav a {
+    
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--cor-texto-primaria);
+    display: block;
+
+    transition: 0.2s;
+
+    border-radius: 12rem;
+    font: 400 1.2rem Poppins;
+    text-decoration: none;
+    background-color: var(--cor-principal-adm);
+    border-style: solid;
+    transition: 0.2s;
+    padding: 0.8vh 0 0.8vh 0;
+}
+.sidenav p{
+    padding: 1vh 2vh 1vh 2vh;
+}
+
+.sidenav a:hover {
+    color: var(--branco-2);
+    border-color: var(--branco-2);
+}
+
+.selected a{
+    color: var(--cor-principal-adm);
+    background-color: var(--branco-2);
+    border-color: var(--verde-selecionado);
+    font-weight: 700;
+}
+
+.side-header{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 0 18vh 0;
+}
+.side-header h1{
+    text-align: center;
+    color: var(--cor-texto-primaria);
+    padding: 0 5vw 0 0;
+}
+.side-header img{
+    height: 5vh;
+    padding: 0.6vh 0 0 0;
 }
 
-.container-botao a{
-    color: var(--cor-texto-secundario);
-    transition: 0.2s;
+
+/* pagina */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
 }
 
-.container-botao a:hover{
-    color: var(--cor-texto-secundario);
-}
 
-/*Cores principais
---cor-principal-usuario:var(--laranja-principal);
+
+
+
+
+
+
+/* --branco: #ffffff;
+    --cinza-claro: #A0A0A0;
+    --azul: #0A8EF2; 
+    --azul-claro: #22F2DD;
+    --branco: #ffffff;
+    --laranja-escuro: #A63C0C;
+    --laranja-claro : #FF7B3D;
+	--laranja-principal: #F26522;
+    --marrom: #A63C0C;
+    --preto: #2c2c2c;
+    --roxo-escuro: #0A14F2;
+    --roxo-claro: #0F15A6;
+    --verde: #00A695; 
+    --verde-claro: #6FF23A;  
+    
+    --cor-texto-secundario: var(--preto);
+    --cor-principal-usuario:var(--laranja-principal);
     --cor-principal-adm:var(--verde);
     --cor-botoes:var(--branco);
     --cor-selecao:var(--azul);
     --cor-fundo:var(--branco);
     --cor-texto-primaria: var(--branco);
     --cor-texto-selecionado-adm: var(--cor-principal-adm);
-    --cor-texto-selecionado-usr: var(--cor-principal-usuario);
-*/
+    --cor-texto-selecionado-usr: var(--cor-principal-usuario); */

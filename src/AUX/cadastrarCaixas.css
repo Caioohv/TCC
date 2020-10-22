@@ -1,0 +1,81 @@
+/* Iniciais */
+body{
+    display: initial;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea, button{
+    font-size: 1.6rem;
+    font-family: Poppins;
+    color: var(--cor-texto-secundario);
+}
+
+/* Conteiner do botao */
+.container-botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-botao a{
+    color: var(--cor-texto-secundario);
+    transition: 0.2s;
+}
+
+.container-botao a:hover{
+    color: var(--cor-texto-secundario);
+}
+
+/* Textos H1, P */
+
+h1{
+    text-align: center;
+    color: var(--cor-principal-adm);
+    
+    
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+    padding: 1vw 4vh 1vw 4vh;
+    color: var(--cor-texto-secundario);
+}
+
+
+/* Divs */
+
+.caixaTexto{
+    width: 35vh;
+    margin: 0 1.2vh 0 1.2vh;
+}
+.fbotao{
+    text-align: center;
+    margin: 4vh;
+}
+
+.tudo{
+    display: flex;
+
+}
+
+.sidebar{
+    width: 25%;
+}
+.textoCentral{
+    width: 75%;
+    background-color: var(--cor---cor-fundo);
+    text-align: center;
+    justify-content: center;
+}
+/*Cores principais
+--cor-principal-usuario:var(--laranja-principal);
+    --cor-principal-adm:var(--verde);
+    --cor-botoes:var(--branco);
+    --cor-selecao:var(--azul);
+    --cor-fundo:var(--branco);
+    --cor-texto-primaria: var(--branco);
+    --cor-texto-selecionado-adm: var(--cor-principal-adm);
+    --cor-texto-selecionado-usr: var(--cor-principal-usuario);
+*/

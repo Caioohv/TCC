@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Caixa</title>
     <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/caixas.css">
+    <link rel="stylesheet" href="../../styles/cadastrarCaixas.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
         rel="stylesheet">
@@ -27,36 +27,35 @@
 </head>
 
 <body>
-    <h1>Cadastro</h1>
-    <br>
-    <div class="textoCentral">
+    <div class="tudo">
+        <div class="sidebar">
+            <div class="container-botao">
+                <a href="/src/index.html">Início</a>
+            </div>
+        </div>
+        <div class="textoCentral">
+        <h1>Cadastro</h1>
+        <br>
         <form action="" method="POST" name="fdmCadastro">
             <p>Dados Básicos</p>
             <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
             <input type="text" name="txtEndereco" id="txtEndereco" class="caixaTexto" placeholder="Endereço">
-            
+
             <p>Localizações</p>
             <input type="text" name="txtX" id="txtX" class="caixaTexto" placeholder="Localização X">
             <input type="text" name="txtY" id="txtY" class="caixaTexto" placeholder="Localização Y">
-            
+
             <p>Horários: </p>
             <input type="time" name="hrrAbrir" id="hrrAbrir" class="caixaTexto">
             <input type="time" name="hrrFechar" id="hrrFechar" class="caixaTexto">
-            
-            
-            
-            
-
-
+            <div class="fbotao">
+                <input type="submit" value="Cadastrar" class="btn btn-outline-primary">
+            </div>
+        </div>
     </div>
-    <div class="fbotao">
-        <input type="submit" value="Cadastrar" class="btn btn-outline-primary">
-    </div>
+    
 
-
-    <div class="container-botao">
-        <a href="/src/index.html">Início</a>
-    </div>
+    
     </form>
 </body>
 
