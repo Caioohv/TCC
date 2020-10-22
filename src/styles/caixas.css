@@ -54,7 +54,20 @@ input, textarea, button{
 p{
     color: var(--cor-texto-secundario);
 }
+.container-botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.container-botao a{
+    color: var(--cor-texto-secundario);
+    transition: 0.2s;
+}
+
+.container-botao a:hover{
+    color: var(--cor-texto-secundario);
+}
 
 /*Cores principais
 --cor-principal-usuario:var(--laranja-principal);
