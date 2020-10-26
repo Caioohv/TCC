@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizar Admin</title>
+    <title>Manutenção Caixa</title>
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="stylesheet" href="/src/styles/caixas.css">
-    <link rel="stylesheet" href="/src/styles/cadastroADM.css">
+    <link rel="stylesheet" href="/src/styles/editarCaixa.css">
+
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -32,34 +33,38 @@
     <div class="sidenav">
         <div class="side-header">
             <a href="/src/index.html"><h1>Início</h1></a>
-            <a href="/src/caixas/crud/cadastrarCaixa.html"><img src="/src/icons/UserIcon.png" alt=""></a>
+            <a href="/src/adm/crudADM/visualizarADM.html"><img src="/src/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p><a href="/src/adm/crudADM/cadastrarADM.html" class="link">Cadastrar Admin</a></p>
-            <p><a href="/src/adm/crudADM/editarADM.html" class="link">Editar Admin</a></p>
-            <p class="selected"><a href="/src/adm/crudADM/visualizarADM.html" class="link">Visualizar Admin</a></p>
+            <p><a href="/src/caixas/crud/cadastrarCaixa.html" class="link">Cadastrar Caixa</a></p>
+            <p class="selected"><a href="/src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
+            <p><a href="/src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
+            <p><a href="/src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
         </div>
     </div>
 
     <!-- Conteúdo da Página -->
     <div class="main">
-        <h1>Meus Dados</h1>
+        <h1>Editar Caixa</h1>
         <br>
         <div class="textoCentral">
-            <form action="" method="POST" name="fdmView">
-                <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto" placeholder="CPF" disabled>
-                <br><br>
-                <input type="text" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email" disabled>
-                <br><br>
-                <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome" disabled>
-                <br><br>
+            <form action="" method="POST" name="fdmCadastro">
+                <input type="text" name="codCaixa" id="codCaixa" class="caixaTexto" placeholder="Código do Caixa">
+                <p>Status</p>
+                
+                <select name="statusCaixa" id="statusCaixa">
+                    <option value="1">Ativo</option>
+                    <option value="2">Em Manutenção</option>
+                    <option value="1">Inativo/Inoperante</option>
+                </select>
+                
+                <br><br><br>
+                <div class="fbotao">
+                    <input type="submit" value="Atualizar" class="btn btn-outline-primary">
+                </div>
+            </form>
         </div>
-        <div class="fbotao">
-            <a href="editarADM.html"><button type="button" class="btn btn-outline-primary" >Editar</button></a>
-            <input type="submit" value="Excluir" class="btn btn-outline-danger">
-        </div>
-    </div>
 
 </body>
 

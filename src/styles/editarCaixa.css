@@ -6,35 +6,20 @@ main input, textarea, button{
     
 }
 
+
+
+
 .main{
     display: flex;
     flex-direction: column;
     padding: 0 0 0 12vw;
 }
-
-/* Conteiner do botao */
-.container-botao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-botao a{
-    color: var(--cor-texto-secundario);
-    transition: 0.2s;
-}
-
-.container-botao a:hover{
-    color: var(--cor-texto-secundario);
-}
-
 /* Textos H1, P */
 
 h1{
-    padding: 5vh 0 5vh 0;
     text-align: center;
     color: var(--cor-principal-adm);
-    font-family: Archivo;
+    padding: 5vh 0 5vh 0;
     
 }
 
@@ -43,8 +28,13 @@ p {
     justify-content: center;
     padding: 1vw 4vh 1vw 4vh;
     color: var(--cor-texto-secundario);
+    font-weight: 500;
+    font-size: 1.6rem;
 }
 
+input{
+    color: var(--cor-texto-secundario);
+}
 
 /* Divs */
 
@@ -52,21 +42,20 @@ p {
     width: 35vh;
     margin: 0 1.2vh 0 1.2vh;
 }
-.fbotao{
-    text-align: center;
-    margin: 4vh;
-}
-
 .textoCentral{
-    width: 75%;
     background-color: var(--cor---cor-fundo);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fbotao{
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-input{
-    color: var(--cor-texto-secundario)
-}
+
 
 /* --branco: #ffffff;
     --branco-2: #f1f1f1;

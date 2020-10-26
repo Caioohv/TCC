@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Admin</title>
+    <title>Visualizar Caixa</title>
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="stylesheet" href="/src/styles/caixas.css">
     <link rel="stylesheet" href="/src/styles/cadastroADM.css">
@@ -21,8 +21,10 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,33 +32,36 @@
     <div class="sidenav">
         <div class="side-header">
             <a href="/src/index.html"><h1>Início</h1></a>
-            <a href="/src/caixas/crud/cadastrarCaixa.html"><img src="/src/icons/UserIcon.png" alt=""></a>
+            <a href="/src/adm/crudADM/visualizarADM.html"><img src="/src/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p class="selected"><a href="/src/adm/crudADM/cadastroADM.html" class="link">Cadastrar Admin</a></p>
-            <p><a href="/src/adm/crudADM/editarADM.html" class="link">Editar Admin</a></p>
-            <p><a href="/src/adm/crudADM/visualizarADM.html" class="link">Visualizar Admin</a></p>
+            <p><a href="/src/caixas/crud/cadastrarCaixa.html" class="link">Cadastrar Caixa</a></p>
+            <p><a href="/src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
+            <p class="selected"><a href="/src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
+            <p><a href="/src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
         </div>
     </div>
 
     <!-- Conteúdo da Página -->
     <div class="main">
-        <h1>Cadastrar Administrador</h1>
+        <h1>Caixas</h1>
         <br>
         <div class="textoCentral">
-            <form action="" method="POST" name="fdmCadastro">
-                <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto" placeholder="CPF">
-                <input type="text" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
+            <form action="" method="POST" name="fdmView">
+                <input type="text" name="txtcod" id="txtcod" class="caixaTexto" placeholder="Código">
                 <br><br>
-                <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
-                <input type="password" name="txtSenha" id="txtSenha" class="caixaTexto" placeholder="Senha">
                 <br><br>
+                <input type="text" name="txtlocal" id="txtlocal" class="caixaTexto" placeholder="Localização" disabled>
+                <br><br>
+                <input type="text" name="txtnome" id="txtnome" class="caixaTexto" placeholder="Nome" disabled>
+
+                
         </div>
         <div class="fbotao">
-            <input type="submit" value="Cadastrar" class="btn btn-outline-primary">
+            <a href="editarADM.html"><button type="button" class="btn btn-outline-primary" >Editar</button></a>
+            <input type="submit" value="Excluir" class="btn btn-outline-danger">
         </div>
-        </form>
     </div>
 
 </body>

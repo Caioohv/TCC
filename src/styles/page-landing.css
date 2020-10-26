@@ -26,7 +26,17 @@ h1{
 p {
     text-align: center;
     justify-content: center;
+    
+}
+
+.header-text{
     padding: 1vw 4vh 1vw 4vh;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.link-text{
+    padding: 0.4vh 4vh 0.4vw 4vh;
 }
 
 
