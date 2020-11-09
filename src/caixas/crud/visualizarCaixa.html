@@ -47,21 +47,38 @@
     <div class="main">
         <h1>Caixas</h1>
         <br>
-        <div class="textoCentral">
+        <div class="formPesquisa">
             <form action="" method="POST" name="fdmView">
                 <input type="text" name="txtcod" id="txtcod" class="caixaTexto" placeholder="Código">
-                <br><br>
-                <br><br>
-                <input type="text" name="txtlocal" id="txtlocal" class="caixaTexto" placeholder="Localização" disabled>
-                <br><br>
-                <input type="text" name="txtnome" id="txtnome" class="caixaTexto" placeholder="Nome" disabled>
+                <input type="text" name="txtlocal" id="txtlocal" class="caixaTexto" placeholder="Cidade">
+                <input type="text" name="txtnome" id="txtnome" class="caixaTexto" placeholder="Nome">
+        </div>
+        <br>
+        <div class="tableCaixas">
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Cidade</th>
+                    <th>Nome</th>
+                    <th>Atividade</th>
+                    <th>Editar</th>
+                </tr>
+                <tr>
+                    <td>c000001</td>
+                    <td>Ouro Preto</td>
+                    <td>Caixa da praça 7</td>
+                    <td>08:00h - 22:00h</td>
+                    <td>
+                        <div class="botoesEdit">
+                            <a href="editarCaixa.html">Editar</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
 
-                
-        </div>
-        <div class="fbotao">
-            <a href="editarADM.html"><button type="button" class="btn btn-outline-primary" >Editar</button></a>
-            <input type="submit" value="Excluir" class="btn btn-outline-danger">
-        </div>
+        
     </div>
 
 </body>
