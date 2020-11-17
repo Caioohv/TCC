@@ -43,6 +43,7 @@ body textarea{
 .sidenav a:hover {
     color: var(--branco-2);
     border-color: var(--branco-2);
+    background-color: var(--cor-principal-adm)
 }
 
 .selected a{
