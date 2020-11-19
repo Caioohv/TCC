@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar Caixa</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/caixas.css">
-    <link rel="stylesheet" href="/src/styles/cadastroADM.css">
-    <link rel="stylesheet" href="/src/styles/visualizarADM.css">
+    <link rel="stylesheet" href="../../../src/styles/main.css">
+    <link rel="stylesheet" href="../../../src/styles/caixas.css">
+    <link rel="stylesheet" href="../../../src/styles/cadastroADM.css">
+    <link rel="stylesheet" href="../../../src/styles/visualizarADM.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -32,16 +32,16 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="/src/index.html"><h1>Início</h1></a>
-            <a href="/src/adm/crudADM/visualizarADM.html"><img src="/src/icons/UserIcon.png" alt="" class="link-adm"></a>
+            <a href="../../../src/index.html"><h1>Início</h1></a>
+            <a href="../../../src/adm/crudADM/visualizarADM.html"><img src="../../../src/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p><a href="/src/caixas/crud/cadastrarCaixa.html" class="link">Cadastrar Caixa</a></p>
-            <p><a href="/src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
-            <p class="selected"><a href="/src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
-            <p><a href="/src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
-            <p><a href="/src/caixas/crud/pesquisarCaixa.html" class="link">Pesquisar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/cadastrarCaixa.html" class="link">Cadastrar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
+            <p class="selected"><a href="../../../src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
+            <p><a href="../../../src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/pesquisarCaixa.html" class="link">Pesquisar Caixa</a></p>
         </div>
     </div>
 

@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Caixa</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/caixas.css">
-    <link rel="stylesheet" href="/src/styles/editarCaixa.css">
+    <title>Manutenção Caixa</title>
+    <link rel="stylesheet" href="../../../src/styles/main.css">
+    <link rel="stylesheet" href="../../../src/styles/caixas.css">
+    <link rel="stylesheet" href="../../../src/styles/editarCaixa.css">
 
 
     <!-- Latest compiled and minified CSS -->
@@ -32,16 +32,16 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="/src/index.html"><h1>Início</h1></a>
-            <a href="/src/adm/crudADM/visualizarADM.html"><img src="/src/icons/UserIcon.png" alt="" class="link-adm"></a>
+            <a href="../../../src/index.php"><h1>Início</h1></a>
+            <a href="../../../src/adm/crudADM/visualizarADM.php"><img src="../../../src/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p><a href="/src/caixas/crud/cadastrarCaixa.html" class="link">Cadastrar Caixa</a></p>
-            <p><a href="/src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
-            <p><a href="/src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
-            <p class="selected"><a href="/src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
-            <p><a href="/src/caixas/crud/pesquisarCaixa.html" class="link">Pesquisar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
+            <p class="selected"><a href="../../../src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
+            <p><a href="../../../src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
+            <p><a href="../../../src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/pesquisarCaixa.html" class="link">Pesquisar Caixa</a></p>
         </div>
     </div>
 
@@ -52,17 +52,14 @@
         <div class="textoCentral">
             <form action="" method="POST" name="fdmCadastro">
                 <input type="text" name="codCaixa" id="codCaixa" class="caixaTexto" placeholder="Código do Caixa">
-                <p>Dados Básicos</p>
-                <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
-                <input type="text" name="txtEndereco" id="txtEndereco" class="caixaTexto" placeholder="Endereço">
-
-                <p>Localizações</p>
-                <input type="text" name="txtX" id="txtX" class="caixaTexto" placeholder="Localização X">
-                <input type="text" name="txtY" id="txtY" class="caixaTexto" placeholder="Localização Y">
-
-                <p>Horários: </p>
-                <input type="time" name="hrrAbrir" id="hrrAbrir" class="caixaTexto">
-                <input type="time" name="hrrFechar" id="hrrFechar" class="caixaTexto">
+                <p>Status</p>
+                
+                <select name="statusCaixa" id="statusCaixa">
+                    <option value="1">Ativo</option>
+                    <option value="2">Em Manutenção</option>
+                    <option value="1">Inativo/Inoperante</option>
+                </select>
+                
                 <br><br><br>
                 <div class="fbotao">
                     <input type="submit" value="Atualizar" class="btn btn-outline-primary">

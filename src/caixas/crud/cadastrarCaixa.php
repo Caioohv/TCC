@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- Latest compiled and minified CSS -->
@@ -18,9 +18,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Caixa</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/caixas.css">
-    <link rel="stylesheet" href="/src/styles/cadastrarCaixa.css">
+    <!-- <link rel="stylesheet" href="/src/styles/main.css"> -->
+    <link rel="stylesheet" href="../../../src/styles/main.css">
+    <link rel="stylesheet" href="../../../src/styles/caixas.css">
+    <link rel="stylesheet" href="../../../src/styles/cadastrarCaixa.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
@@ -36,11 +37,11 @@
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p class="selected"><a href="/src/caixas/crud/cadastrarCaixa.html" class="link">Cadastrar Caixa</a></p>
-            <p><a href="/src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
-            <p><a href="/src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
-            <p><a href="/src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
-            <p><a href="/src/caixas/crud/pesquisarCaixa.html" class="link">Pesquisar Caixa</a></p>
+            <p class="selected"><a href="/src/caixas/crud/cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/manutencaoCaixa.php" class="link">Manutenção</a></p>
+            <p><a href="../../../src/caixas/crud/visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
+            <p><a href="../../../src/caixas/crud/editarCaixa.php" class="link">Editar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
             
 
 
