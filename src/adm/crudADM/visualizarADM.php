@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar Admin</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/caixas.css">
-    <link rel="stylesheet" href="/src/styles/cadastroADM.css">
+    <link rel="stylesheet" href="../../../src/styles/main.css">
+    <link rel="stylesheet" href="../../../src/styles/caixas.css">
+    <link rel="stylesheet" href="../../../src/styles/cadastroADM.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
