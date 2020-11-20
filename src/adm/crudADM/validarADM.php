@@ -28,15 +28,15 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="/src/index.html"><h1>Início</h1></a>
-            <a href="/src/caixas/crud/cadastrarCaixa.html"><img src="/src/icons/UserIcon.png" alt=""></a>
+            <a href="../../../src/index.html"><h1>Início</h1></a>
+            <a href="../../../src/caixas/crud/cadastrarCaixa.php"><img src="../../../src/icons/UserIcon.png" alt=""></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p><a href="/src/adm/crudADM/cadastrarADM.php" class="link">Cadastrar Admin</a></p>
-            <p><a href="/src/adm/crudADM/editarADM.html" class="link">Editar Admin</a></p>
-            <p><a href="/src/adm/crudADM/visualizarADM.html" class="link">Visualizar Admin</a></p>
-            <p class="selected"><a href="/src/adm/crudADM/validarADM.html" class="link">Validar Admin</a></p>
+            <p><a href="../../../src/adm/crudADM/cadastrarADM.php" class="link">Cadastrar Admin</a></p>
+            <p><a href="../../../src/adm/crudADM/editarADM.php" class="link">Editar Admin</a></p>
+            <p><a href="../../../src/adm/crudADM/visualizarADM.php" class="link">Visualizar Admin</a></p>
+            <p class="selected"><a href="../../../src/adm/crudADM/validarADM.php" class="link">Validar Admin</a></p>
         </div>
     </div>
 
