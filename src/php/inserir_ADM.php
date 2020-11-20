@@ -20,10 +20,10 @@ $result_adm = mysqli_query($con, $result_adm);
 //verificando se salvou com sucesso com base ao id_adm
 if(mysqli_insert_id($con)){
     $_SESSION['msg'] = "<p style='color:green;'>Administrador cadastrado com sucesso</p>";
-    header("Location: cadastrarADM.php");
+    header("location: cadastrarADM.php");
 }else{
     $_SESSION['msg'] = "<p style='color:red;'>Administrador não foi cadastrado com sucesso</p>";
-    header("Location: cadastrarADM.php");
+    header("location: cadastrarADM.php");
 }
 ?>
 
