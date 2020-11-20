@@ -9,9 +9,9 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Admin</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/caixas.css">
-    <link rel="stylesheet" href="/src/styles/cadastroADM.css">
+    <link rel="stylesheet" href="../../../src/styles/main.css">
+    <link rel="stylesheet" href="../../../src/styles/caixas.css">
+    <link rel="stylesheet" href="../../../src/styles/cadastroADM.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -30,15 +30,15 @@ session_start();
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="/src/index.html"><h1>Início</h1></a>
-            <a href="/src/caixas/crud/cadastrarCaixa.html"><img src="/src/icons/UserIcon.png" alt=""></a>
+            <a href="../../../src/index.html"><h1>Início</h1></a>
+            <a href="../../../src/caixas/crud/cadastrarCaixa.html"><img src="/src/icons/UserIcon.png" alt=""></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
             <p class="selected"><a href="/src/adm/crudADM/cadastroADM.php" class="link">Cadastrar Admin</a></p>
-            <p><a href="/src/adm/crudADM/editarADM.html" class="link">Editar Admin</a></p>
-            <p><a href="/src/adm/crudADM/visualizarADM.html" class="link">Visualizar Admin</a></p>
-            <p><a href="/src/adm/crudADM/validarADM.html" class="link">Validar Admin</a></p>
+            <p><a href="../../../src/adm/crudADM/editarADM.html" class="link">Editar Admin</a></p>
+            <p><a href="../../../src/adm/crudADM/visualizarADM.html" class="link">Visualizar Admin</a></p>
+            <p><a href="../../../src/adm/crudADM/validarADM.html" class="link">Validar Admin</a></p>
         </div>
     </div>
 

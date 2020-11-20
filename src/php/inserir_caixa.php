@@ -1,27 +1,49 @@
 <?php
+session_start();
+        
+//importanto arquivo de conexao
 include 'conexao.php';
 
-if (isset($_POST["txtProduto"])) {
-    $nmProduto = $_POST["txtProduto"];
-    $descProduto = $_POST["txtDescricao"];
-    $categoria = $_POST["ddlCategoria"];
 
-    if (empty($nmProduto) && empty($categoria)) {
-        echo "<div class=info>Preencha as informações corretamente.</div>";
-        exit;
-    } else {
-        $SQL = "INSERT INTO tbProdutos (nmproduto, descproduto, idcategoria, idUser)";
-        $SQL .= " VALUES('" . $nmProduto . "', '" . $descProduto . "',".$categoria.", ".$_SESSION['idUser'].")";
+    //verifica se algum valor foi definido
+    if(isset($_POST['submit'])){
+        // - - exibe os valores no console
+        // echo $_POST['txtNome'];
+        // echo $_POST['txtEndereco'];
+        // echo $_POST['txtX'];
+        // echo $_POST['txtY'];
+        // echo $_POST['hrrAbrir'];
+        // echo $_POST['hrrFechar'];
+
+        //passa os valores recebidos pelo post para variáveis
+        $nome = filter_input(INPUT_POST, 'txtNome' FILTER_SANITIZE_STRING];
+        $endereco = filter_input(INPUT_POST, 'txtEndereco' FILTER_SANITIZE_STRING];
+        $X = $_POST['txtX'];
+        $Y = $_POST['txtY'];
+        $abertura = $_POST['hrrAbrir'];
+        $fechamento = $_POST['hrrFechar'];
         
-        echo $SQL;
         
-        if ($con->query($SQL) === TRUE){
-            echo "<script>alert('Produto cadastrado com sucesso.');</script>";
-            echo "<script>window.location = 'listar.php';</script>";
-        } else {
-            echo "<script>alert('Erro ao cadastrar o produto.');</script>";
-            echo "<script>window.location = 'novo.php';</script>";
+        
+        //recebendo os dados do formulário
+        $nm_adm = filter_input(INPUT_POST, 'txtNome', FILTER_SANITIZE_STRING);
+        $cpf_adm = filter_input(INPUT_POST, 'txtCpf', FILTER_SANITIZE_STRING);
+        $email_adm = filter_input(INPUT_POST, 'txtEmail', FILTER_SANITIZE_EMAIL);
+        $pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_PASSWORD);
+        
+        //inserindo no banco de dados a querry 
+        $result_adm = "INSERT INTO p.admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm";
+        //executando querry
+        $result_adm = mysqli_querry($con, $result_adm);
+        
+        
+        //verificando se salvou com sucesso com base ao id_adm
+        if(mysqli_insert_id($con)){
+            $_SESSION['msg'] = "<p style='color:green;'>Administrador cadastrado com sucesso</p>";
+            header("Location: cadastrarADM.php");
+        }else{
+            $_SESSION['msg'] = "<p style='color:red;'>Administrador não foi cadastrado com sucesso</p>";
+            header("Location: cadastrarADM.php");
         }
-    }
-}
-?>
+        ?>
+        
