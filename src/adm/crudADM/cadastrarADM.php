@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,11 +45,18 @@
     <!-- Conteúdo da Página -->
     <div class="main">
         <h1>Cadastrar Administrador</h1>
-        <form action="" method="POST" name="fdmCadastro">
+        <?php
+            //imprime o valor da variável global da mensagem, e a destrói depois disso
+            if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset ($_SESSION['msg']);
+            }
+        ?>
+        <form action="cadastroADM.php" method="POST" name="fdmCadastro">
                 <div class="textoCentral">
                     <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
                     <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto" placeholder="CPF">
-                    <input type="text" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
+                    <input type="email" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
                     <input type="password" name="txtSenha" id="txtSenha" class="caixaTexto" placeholder="Senha">
                     <br><br>
                 </div>

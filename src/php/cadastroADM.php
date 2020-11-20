@@ -1,6 +1,34 @@
 <?php
+session_start();
+
+//importanto arquivo de conexao
 include 'conexao.php';
 
+
+//recebendo os dados do formulário
+$nm_adm = filter_input(INPUT_POST, 'txtNome', FILTER_SANITIZE_STRING);
+$cpf_adm = filter_input(INPUT_POST, 'txtCpf', FILTER_SANITIZE_STRING);
+$email_adm = filter_input(INPUT_POST, 'txtEmail', FILTER_SANITIZE_EMAIL);
+$pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_PASSWORD);
+
+//inserindo no banco de dados a querry 
+$result_adm = "INSERT INTO p.admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm";
+//executando querry
+$result_adm = mysqli_querry($con, $result_adm);
+
+
+//verificando se salvou com sucesso com base ao id_adm
+if(mysqli_insert_id($con)){
+    $_SESSION['msg'] = "<p style='color:green;'>Administrador cadastrado com sucesso</p>";
+    header("Location: cadastrarADM.php");
+}else{
+    $_SESSION['msg'] = "<p style='color:red;'>Administrador não foi cadastrado com sucesso</p>";
+    header("Location: cadastrarADM.php");
+}
+?>
+
+
+<!-- 
 if (isset($_POST["txtCpf"])) {
     $cpf_adm = $_POST["txtCpf"];
     $email_adm = $_POST["txtEmail"];
@@ -23,4 +51,4 @@ if (isset($_POST["txtCpf"])) {
         }
     }
 }
-?>
+-->
