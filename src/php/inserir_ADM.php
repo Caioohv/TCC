@@ -12,7 +12,8 @@ $email_adm = filter_input(INPUT_POST, 'txtEmail', FILTER_SANITIZE_EMAIL);
 $pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_STRING);
 
 //inserindo no banco de dados a query 
-$result_adm = "INSERT INTO p.admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm')";
+$result_adm = "INSERT INTO admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm')";
+echo $result_adm;
 //executando query
 $result_adm = mysqli_query($con, $result_adm);
 
