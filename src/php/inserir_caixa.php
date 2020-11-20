@@ -1,5 +1,5 @@
 <?php
-session_start();
+
         
 //importanto arquivo de conexao
 include 'conexao.php';
