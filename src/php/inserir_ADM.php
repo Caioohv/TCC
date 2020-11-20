@@ -12,7 +12,8 @@ $email_adm = filter_input(INPUT_POST, 'txtEmail', FILTER_SANITIZE_EMAIL);
 $pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_STRING);
 
 //inserindo no banco de dados a query 
-$result_adm = "INSERT INTO p.admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm')";
+$result_adm = "INSERT INTO admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm')";
+echo $result_adm;
 //executando query
 $result_adm = mysqli_query($con, $result_adm);
 
@@ -20,10 +21,10 @@ $result_adm = mysqli_query($con, $result_adm);
 //verificando se salvou com sucesso com base ao id_adm
 if(mysqli_insert_id($con)){
     $_SESSION['msg'] = "<p style='color:green;'>Administrador cadastrado com sucesso</p>";
-    header("Location: cadastrarADM.php");
+    header("location: cadastrarADM.php");
 }else{
     $_SESSION['msg'] = "<p style='color:red;'>Administrador não foi cadastrado com sucesso</p>";
-    header("Location: cadastrarADM.php");
+    header("location: cadastrarADM.php");
 }
 ?>
 
