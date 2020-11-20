@@ -9,12 +9,12 @@ include 'conexao.php';
 $nm_adm = filter_input(INPUT_POST, 'txtNome', FILTER_SANITIZE_STRING);
 $cpf_adm = filter_input(INPUT_POST, 'txtCpf', FILTER_SANITIZE_STRING);
 $email_adm = filter_input(INPUT_POST, 'txtEmail', FILTER_SANITIZE_EMAIL);
-$pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_PASSWORD);
+$pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_STRING);
 
-//inserindo no banco de dados a querry 
+//inserindo no banco de dados a query 
 $result_adm = "INSERT INTO p.admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm";
-//executando querry
-$result_adm = mysqli_querry($con, $result_adm);
+//executando query
+$result_adm = mysqli_query($con, $result_adm);
 
 
 //verificando se salvou com sucesso com base ao id_adm
