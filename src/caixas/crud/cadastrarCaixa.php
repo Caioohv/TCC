@@ -32,12 +32,12 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="/src/index.html"><h1>Início</h1></a>
-            <a href="/src/adm/crudADM/visualizarADM.html"><img src="/src/icons/UserIcon.png" alt="" class="link-adm"></a>
+            <a href="/src/index.php"><h1>Início</h1></a>
+            <a href="/src/adm/crudADM/visualizarADM.php"><img src="/src/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p class="selected"><a href="/src/caixas/crud/cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
+            <p class="selected"><a href="../../../src/caixas/crud/cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
             <p><a href="../../../src/caixas/crud/manutencaoCaixa.php" class="link">Manutenção</a></p>
             <p><a href="../../../src/caixas/crud/visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
             <p><a href="../../../src/caixas/crud/editarCaixa.php" class="link">Editar Caixa</a></p>
@@ -65,7 +65,7 @@
                 <p>Horários: </p>
                 <input type="time" name="hrrAbrir" id="hrrAbrir" class="caixaTexto">
                 <input type="time" name="hrrFechar" id="hrrFechar" class="caixaTexto">
-                <p>Código do Caixa: XXXXXXXX</p>
+                <!-- <p>Código do Caixa: XXXXX</p> -->
                 
                 <div class="fbotao">
                     <input type="submit" name="submit" value="Cadastrar" class="btn btn-outline-primary">

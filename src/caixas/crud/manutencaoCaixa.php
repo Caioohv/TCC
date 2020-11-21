@@ -38,10 +38,10 @@
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
             <p><a href="../../../src/caixas/crud/cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
-            <p class="selected"><a href="../../../src/caixas/crud/manutencaoCaixa.html" class="link">Manutenção</a></p>
-            <p><a href="../../../src/caixas/crud/visualizarCaixa.html" class="link">Visualizar Caixas</a></p>
-            <p><a href="../../../src/caixas/crud/editarCaixa.html" class="link">Editar Caixa</a></p>
-            <p><a href="../../../src/caixas/crud/pesquisarCaixa.html" class="link">Pesquisar Caixa</a></p>
+            <p class="selected"><a href="../../../src/caixas/crud/manutencaoCaixa.php" class="link">Manutenção</a></p>
+            <p><a href="../../../src/caixas/crud/visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
+            <p><a href="../../../src/caixas/crud/editarCaixa.php" class="link">Editar Caixa</a></p>
+            <p><a href="../../../src/caixas/crud/pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
         </div>
     </div>
 

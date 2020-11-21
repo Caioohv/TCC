@@ -1,5 +1,49 @@
 <?php
-session_start();
+
+        
+//importanto arquivo de conexao
+include 'conexao.php';
+
+
+    //verifica se algum valor foi definido
+    
+        
+        // $cpf_adm = filter_input(INPUT_POST, 'txtCpf', FILTER_SANITIZE_STRING);
+        // $email_adm = filter_input(INPUT_POST, 'txtEmail', FILTER_SANITIZE_EMAIL);
+        // $pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_STRING);
+        // $nm_adm = filter_input(INPUT_POST, 'txtNome', FILTER_SANITIZE_STRING);            
+        
+        $cpf_adm = $_POST['txtCpf'];
+        $email_adm = $_POST['txtEmail'];
+        $pass_adm = $_POST['txtSenha'];
+        $nm_adm = $_POST['txtNome'];
+
+
+        //inserindo no banco de dados a query 
+        $result = "
+        insert into admin (cpf_adm, email_adm, pass_adm, nm_adm) values 
+        ('$cpf_adm', '$email_adm', '$pass_adm', 
+        '$nm_adm');
+        ";
+        
+        echo $result;
+        //executando query
+        $result = mysqli_query($con, $result);
+        if($result){
+            header('location:../adm/crudADM/cadastrarADM.php');
+        }else{
+        echo '<p style="color: red; font-size: 3rem;"> Erro ao cadastrar Administrador</p>';
+        }
+
+        mysqli_close($con);
+    
+?>
+
+
+
+<!-- 
+?php
+/*session_start();
 
 //importanto arquivo de conexao
 include 'conexao.php';
@@ -12,7 +56,8 @@ $email_adm = filter_input(INPUT_POST, 'txtEmail', FILTER_SANITIZE_EMAIL);
 $pass_adm = filter_input(INPUT_POST, 'txtSenha', FILTER_SANITIZE_STRING);
 
 //inserindo no banco de dados a query 
-$result_adm = "INSERT INTO admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES ('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm')";
+$result_adm = "INSERT INTO admin (nm_adm,cpf_adm, email_adm, pass_adm) VALUES 
+('$nm_adm', '$cpf_adm, '$email_adm, '$pass_adm')";
 echo $result_adm;
 //executando query
 $result_adm = mysqli_query($con, $result_adm);
@@ -29,14 +74,13 @@ if(mysqli_insert_id($con)){
 ?>
 
 
-<!-- 
 if (isset($_POST["txtCpf"])) {
     $cpf_adm = $_POST["txtCpf"];
     $email_adm = $_POST["txtEmail"];
     $pass_adm = $_POST["txtSenha"];
     $nm_adm = $_POST["txtNome"];
 
-       
+        
     if (empty($cpf_adm) && empty($nm_adm)) {
         echo "<div class=info>Preencha as informações corretamente.</div>";
         exit;
@@ -51,5 +95,5 @@ if (isset($_POST["txtCpf"])) {
             echo "<script>alert('Erro ao cadastrar administrador.');</script>";
         }
     }
-}
--->
+} 
+*/-->

@@ -33,7 +33,7 @@
     <div class="sidenav">
         <div class="side-header">
             <a href="../../../src/index.html"><h1>Início</h1></a>
-            <a href="../../../src/adm/crudADM/visualizarADM.html"><img src="../../../src/icons/UserIcon.png" alt="" class="link-adm"></a>
+            <a href="../../../src/adm/crudADM/visualizarADM.php"><img src="../../../src/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->

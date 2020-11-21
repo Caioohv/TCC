@@ -27,7 +27,7 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="../../../src/index.html"><h1>Início</h1></a>
+            <a href="../../../src/index.php"><h1>Início</h1></a>
             <a href="../../../src/caixas/crud/cadastrarCaixa.php"><img src="../../../src/icons/UserIcon.png" alt=""></a>
         </div>
         <div class="links">
