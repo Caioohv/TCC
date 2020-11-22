@@ -15,9 +15,8 @@ include 'conexao.php';
         
         $cpf_adm = $_POST['txtCpf'];
         $email_adm = $_POST['txtEmail'];
-        $pass_adm = $_POST['txtSenha'];
+        $pass_adm = MD5($_POST['txtSenha']);
         $nm_adm = $_POST['txtNome'];
-
 
         //inserindo no banco de dados a query 
         $result = "
@@ -30,9 +29,16 @@ include 'conexao.php';
         //executando query
         $result = mysqli_query($con, $result);
         if($result){
+            echo"<script language='javascript' type='text/javascript'> 
+                    alert('Administrador cadastrado com sucesso!');
+                </script>";
             header('location:../adm/crudADM/cadastrarADM.php');
         }else{
-        echo '<p style="color: red; font-size: 3rem;"> Erro ao cadastrar Administrador</p>';
+        
+            echo"<script language='javascript' type='text/javascript'> 
+                    alert('Não foi possível cadastrar esse usuário');
+                </script>";
+            header('location:../adm/crudADM/cadastrarADM.php');
         }
 
         mysqli_close($con);

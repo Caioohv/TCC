@@ -11,15 +11,16 @@
     </head>
 
     <body>
-        <h1>Bem-vindo</h1>
-        <form action="/src/php/login_auth.php">
-            <input type="text" name="txtUser" id="txtUser" placeholder="Usuário">
-            <br>
-            <input type="text" name="txtPass" id="txtPass" placeholder="Senha">
-            <br>
-            <input type="submit" name="submit" value="Entrar" class="btn btn-outline-primary">
-
-        </form>
+        <div class="div-central">
+            <h1>Bem-vindo</h1>
+            <form action="php/login_auth.php">
+                <input type="text" name="txtUser" id="txtUser" placeholder="Usuário">
+                <br>
+                <input type="password" name="txtPass" id="txtPass" placeholder="Senha">
+                <br>
+                <input type="submit" name="submit" value="Entrar" class="btn btn-outline-primary">
+            </form>
+        </div>
     </body>
 
 </html>
