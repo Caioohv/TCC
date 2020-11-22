@@ -3,8 +3,9 @@
 include 'conexao.php';
 
 $id_adm = $_POST['txtUser'];
+echo $id_adm;
 $pass_adm = md5($_POST['txtPass']);
-
+echo $pass_adm;
 $verifica = mysql_query("SELECT (id_adm, pass_adm) FROM admin where id_adm = '$id_adm' AND pass_adm = '$pass_adm'") or die("Usuário ou senha inválidos");
 
 if (isset($senha)) {
@@ -17,4 +18,5 @@ if (isset($senha)) {
         header("Location:../../../index.html");
     }
 }
+    mysqli_close($con); 
 ?>

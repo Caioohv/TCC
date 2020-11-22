@@ -13,10 +13,10 @@
     <body>
         <div class="div-central">
             <h1>Bem-vindo</h1>
-            <form action="php/login_auth.php">
-                <input type="text" name="txtUser" id="txtUser" placeholder="Usuário">
+            <form action="php/login_auth.php" method="post">
+                <input type="text" name="txtUser" id="txtUser" class="caixaTexto" placeholder="Usuário">
                 <br>
-                <input type="password" name="txtPass" id="txtPass" placeholder="Senha">
+                <input type="password" name="txtPass" id="txtPass" class="caixaTexto" placeholder="Senha">
                 <br>
                 <input type="submit" name="submit" value="Entrar" class="btn btn-outline-primary">
             </form>
