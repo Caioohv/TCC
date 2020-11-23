@@ -18,6 +18,9 @@ Src in MVC:
 			main.css
 			sidenav.css
 			central.css
+			table.css
+			botao.css			
+			
 			caixa/
 				create.css
 				...
