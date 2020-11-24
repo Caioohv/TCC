@@ -21,11 +21,8 @@
     <!-- Gerais -->
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/sidenav.css">
-    <link rel="stylesheet" href="../styles/central.css">
-    <link rel="stylesheet" href="../styles/table.css">
-    <link rel="stylesheet" href="../styles/button.css">
     <!-- Específicos -->
-    
+    <link rel="stylesheet" href="../styles/caixas/cadastrar.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
@@ -73,8 +70,9 @@
                 </div>
             </form>
         </section>
+        
     </div>
-
+    
 </body>
 
 </html>
