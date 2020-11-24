@@ -33,7 +33,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 63.5%;
+    font-size: 62.5%;
 }
 
 /*Definindo cor de fundo, alinhamento de conteúdo e tipo de display*/
@@ -45,7 +45,7 @@ body{
 }
 
 body, input, button, textarea{
-    font-size: 1.6rem;
+    
     font-family: Poppins;
-    color: var(--cor-texto-primaria);
+    color: var(--cor-texto-primaria); 
 }
