@@ -18,10 +18,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Caixa</title>
-    <!-- <link rel="stylesheet" href="/src/styles/main.css"> -->
-    <link rel="stylesheet" href="../../../src/styles/main.css">
-    <link rel="stylesheet" href="../../../src/styles/caixas.css">
-    <link rel="stylesheet" href="../../../src/styles/cadastrarCaixa.css">
+    <!-- Gerais -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/sidenav.css">
+    <link rel="stylesheet" href="../styles/central.css">
+    <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="../styles/button.css">
+    <!-- Específicos -->
+    
 
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
@@ -32,19 +36,16 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="/src/index.php"><h1>Início</h1></a>
-            <a href="/src/adm/crudADM/visualizarADM.php"><img src="/src/icons/UserIcon.png" alt="" class="link-adm"></a>
+            <a href="../../index.php"><h1>Início</h1></a>
+            <a href="../adm/cadastrarADM.php"><img src="../styles/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p class="selected"><a href="../../../src/caixas/crud/cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
-            <p><a href="../../../src/caixas/crud/manutencaoCaixa.php" class="link">Manutenção</a></p>
-            <p><a href="../../../src/caixas/crud/visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
-            <p><a href="../../../src/caixas/crud/editarCaixa.php" class="link">Editar Caixa</a></p>
-            <p><a href="../../../src/caixas/crud/pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
-            
-
-
+            <p class="selected"><a href="cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
+            <p><a href="manutencaoCaixa.php" class="link">Manutenção</a></p>
+            <p><a href="visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
+            <p><a href="editarCaixa.php" class="link">Editar Caixa</a></p>
+            <p><a href="pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
         </div>
     </div>
 
@@ -53,7 +54,7 @@
         <h1>Cadastro</h1>
         <br>
         <section class="container">
-            <form action="../../php/inserir_caixa.php" method="POST" name="fdmCadastro">
+            <form action="../../Model/caixa/inserir_caixa.php" method="POST" name="fdmCadastro">
                 <p>Dados Básicos</p>
                 <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
                 <input type="text" name="txtEndereco" id="txtEndereco" class="caixaTexto" placeholder="Endereço">

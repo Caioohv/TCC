@@ -1,0 +1,63 @@
+.sidenav {
+    height: 100%; /* altura máxima */
+    width: 20vw; /* largura da sidebar */
+    position: fixed; /* a sidebar fica fixa */
+    z-index: 1; /* aparece acima de tudo */
+    top: 0; 
+    left: 0;
+    background-color: var(--cor-principal-adm); /* cor */
+    overflow-x: hidden; /* sem scroll */
+    padding-top: 20px;
+    text-align: center;
+}
+.link {
+    
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--cor-texto-primaria);
+    display: block;
+
+    transition: 0.2s;
+
+    border-radius: 12rem;
+    font: 400 1.2rem Poppins;
+    text-decoration: none;
+    background-color: var(--cor-principal-adm);
+    border-style: solid;
+    transition: 0.2s;
+    padding: 0.8vh 0 0.8vh 0;
+}
+.sidenav p{
+    padding: 0.4vh 2vh 0.4vh 2vh;
+}
+
+.sidenav a:hover {
+    color: var(--branco-2);
+    border-color: var(--branco-2);
+    background-color: var(--cor-principal-adm)
+}
+
+
+.selected a{
+    color: var(--cor-principal-adm);
+    background-color: var(--branco-2);
+    border-color: var(--verde-selecionado);
+    font-weight: 700;
+}
+
+.side-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 18vh 0;
+}
+.side-header h1{
+    text-align: center;
+    color: var(--cor-texto-primaria);
+    padding: 0 8vw 0 0;
+}
+.side-header img{
+    height: 5vh;
+    padding: 0.6vh 0 0 0;
+}
+

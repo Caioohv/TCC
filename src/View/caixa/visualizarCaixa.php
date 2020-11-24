@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar Caixa</title>
-    <link rel="stylesheet" href="../../../src/styles/main.css">
-    <link rel="stylesheet" href="../../../src/styles/caixas.css">
-    <link rel="stylesheet" href="../../../src/styles/cadastroADM.css">
-    <link rel="stylesheet" href="../../../src/styles/visualizarADM.css">
+    <!-- Gerais -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/sidenav.css">
+    <link rel="stylesheet" href="../styles/central.css">
+    <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="../styles/button.css">
+    <!-- Específicos -->
+    
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -32,16 +36,16 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="../../../src/index.php"><h1>Início</h1></a>
-            <a href="../../../src/adm/crudADM/visualizarADM.php"><img src="../../../src/icons/UserIcon.png" alt="" class="link-adm"></a>
+            <a href="../../index.php"><h1>Início</h1></a>
+            <a href="../adm/cadastrarADM.php"><img src="../styles/icons/UserIcon.png" alt="" class="link-adm"></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p><a href="../../../src/caixas/crud/cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
-            <p><a href="../../../src/caixas/crud/manutencaoCaixa.php" class="link">Manutenção</a></p>
-            <p class="selected"><a href="../../../src/caixas/crud/visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
-            <p><a href="../../../src/caixas/crud/editarCaixa.php" class="link">Editar Caixa</a></p>
-            <p><a href="../../../src/caixas/crud/pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
+            <p><a href="cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
+            <p><a href="manutencaoCaixa.php" class="link">Manutenção</a></p>
+            <p class="selected"><a href="visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
+            <p><a href="editarCaixa.php" class="link">Editar Caixa</a></p>
+            <p><a href="pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
         </div>
     </div>
 
@@ -72,7 +76,7 @@
                     <td>08:00h - 22:00h</td>
                     <td>
                         <div class="botoesEdit">
-                            <a href="editarCaixa.html">Editar</a>
+                            <a href="editarCaixa.php">Editar</a>
                         </div>
                     </td>
                 </tr>
@@ -83,7 +87,7 @@
                     <td>09:00h - 21:00h</td>
                     <td>
                         <div class="botoesEdit">
-                            <a href="editarCaixa.html">Editar</a>
+                            <a href="editarCaixa.php">Editar</a>
                         </div>
                     </td>
                 </tr>
@@ -94,7 +98,7 @@
                     <td>06:00h - 00:00h</td>
                     <td>
                         <div class="botoesEdit">
-                            <a href="editarCaixa.html">Editar</a>
+                            <a href="editarCaixa.php">Editar</a>
                         </div>
                     </td>
                 </tr>
@@ -105,7 +109,7 @@
                     <td>08:00h - 20:00h</td>
                     <td>
                         <div class="botoesEdit">
-                            <a href="editarCaixa.html">Editar</a>
+                            <a href="editarCaixa.php">Editar</a>
                         </div>
                     </td>
                 </tr>

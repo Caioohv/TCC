@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Admin</title>
-    <link rel="stylesheet" href="../../../src/styles/main.css">
-    <link rel="stylesheet" href="../../../src/styles/caixas.css">
-    <link rel="stylesheet" href="../../../src/styles/cadastroADM.css">
+
+    <!-- Gerais -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/sidenav.css">
+    <link rel="stylesheet" href="../styles/central.css">
+    <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="../styles/button.css">
+    <!-- Específicos -->
+    
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -27,15 +33,16 @@
     <!-- Sidebar -->
     <div class="sidenav">
         <div class="side-header">
-            <a href="../../../src/index.php"><h1>Início</h1></a>
-            <a href="../../../src/caixas/crud/cadastrarCaixa.php"><img src="../../../src/icons/UserIcon.png" alt=""></a>
+            <a href="../../index.php"><h1>Início</h1></a>
+            <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
+            <a href="../login/login.php"><img src="../styles/icons/logoout_icon.png" alt=""></a>
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-            <p><a href="../../../src/adm/crudADM/cadastrarADM.php" class="link">Cadastrar Admin</a></p>
-            <p class="selected"><a href="../../../src/adm/crudADM/editarADM.php" class="link">Editar Admin</a></p>
-            <p><a href="../../../src/adm/crudADM/visualizarADM.php" class="link">Visualizar Admin</a></p>
-            <p><a href="../../../src/adm/crudADM/validarADM.php" class="link">Validar Admin</a></p>
+            <p><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
+            <p class="selected"><a href="editarADM.php" class="link">Editar Admin</a></p>
+            <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
+            <p><a href="validarADM.php" class="link">Validar Admin</a></p>
         </div>
     </div>
 
