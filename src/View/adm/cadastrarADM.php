@@ -43,17 +43,12 @@
         </div>
         <div class="links">
             <!-- Colocar 'class="selected" onde for o selecionado' -->
-<<<<<<< Updated upstream:src/View/adm/cadastrarADM.php
+
             <p class="selected"><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
             <p><a href="editarADM.php" class="link">Editar Admin</a></p>
             <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
             <p><a href="validarADM.php" class="link">Validar Admin</a></p>
-=======
-            <p class="selected"><a href="../../../src/adm/crudADM/cadastrarADM.php" class="link">Cadastrar Admin</a></p>
-            <p><a href="../../../src/adm/crudADM/editarADM.php" class="link">Editar Admin</a></p>
-            <p><a href="../../../src/adm/crudADM/visualizarADM.php" class="link">Visualizar Admin</a></p>
-            <p><a href="../../../src/adm/crudADM/validarADM.php" class="link">Validar Admin</a></p>
->>>>>>> Stashed changes:src/adm/crudADM/cadastrarADM.php
+
         </div>
     </div>
 
@@ -69,9 +64,9 @@
         ?>
         <form action="../../Model/adm/inserir_adm.php" method="POST" name="fdmCadastro">
                 <div class="textoCentral">
+                    <input type="email" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
                     <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
                     <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto" placeholder="CPF">
-                    <input type="email" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
                     <input type="password" name="txtSenha" id="txtSenha" class="caixaTexto" placeholder="Senha">
                     <br><br>
                 </div>

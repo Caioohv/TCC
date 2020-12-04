@@ -21,8 +21,10 @@
     <!-- Gerais -->
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/sidenav.css">
+    <link rel="stylesheet" href="../styles/central.css">
     <!-- Específicos -->
-    <link rel="stylesheet" href="../styles/caixas/cadastrar.css">
+    <!-- <link rel="stylesheet" href="../styles/caixas/cadastrar.css"> -->
+    <link rel="stylesheet" href="../styles/caixas/cadastrar_caixa.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
@@ -48,9 +50,10 @@
 
     <!-- Conteúdo da Página -->
     <div class="main">
-        <h1>Cadastro</h1>
-        <br>
-        <section class="container">
+        
+        <div class="container">
+            <h1>Cadastro</h1>
+            <br>
             <form action="../../Model/caixa/inserir_caixa.php" method="POST" name="fdmCadastro">
                 <p>Dados Básicos</p>
                 <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
@@ -69,8 +72,8 @@
                     <input type="submit" name="submit" value="Cadastrar" class="btn btn-outline-primary">
                 </div>
             </form>
-        </section>
-        
+        </div>
+        <p class="teste">aaaaaaaaaaaaaaaa</p>
     </div>
     
 </body>
