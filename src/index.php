@@ -19,8 +19,6 @@
         }
         $logado = $_SESSION['login'];
     ?>
-tsthtutdown
-sh
 
 </head>
 <body>

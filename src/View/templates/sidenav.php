@@ -2,7 +2,7 @@
     <div class="side-header">
         <a href="../../index.php"><h1>Início</h1></a>
         <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
-        <a href="../login/login.php"><img src="../styles/icons/logoout_icon.png" alt=""></a>
+        <a href="../login/login.php"><img src="../styles/icons/logout.png" alt=""></a>
     </div>
     <div class="links">
         <!-- Colocar 'class="selected" onde for o selecionado' -->
