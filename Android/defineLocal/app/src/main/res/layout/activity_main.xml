@@ -118,13 +118,13 @@
 
 
 
-            <ImageButton
+            <Button
                 android:id="@+id/localizarBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Localizar"
-                android:drawable="@drawable/buttom"/>
+                android:background="@drawable/buttom"/>
 
             </LinearLayout>
 

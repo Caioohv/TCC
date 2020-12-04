@@ -2,7 +2,7 @@
 
         
 //importanto arquivo de conexao
-include 'conexao.php';
+include '../conexao.php';
 
 
     //verifica se algum valor foi definido
@@ -36,12 +36,17 @@ include 'conexao.php';
         //executando querry
         $result = mysqli_query($con, $result);
         if($result){
-            header('location:../caixas/crud/cadastrarCaixa.php');
+            mysqli_close($con);
+            $msg = "Caixa cadastrado com sucesso!";
+            echo "<script type='text/javascript'>alert('$msg');";
+            echo "javascript:window.location='../../View/caixa/cadastrarCaixa.php';</script>";
+            
         }else{
             echo '<p style="color: red; font-size: 3rem;"> Erro ao cadastrar caixa</p>';
+            mysqli_close($con);
         }
 
-        mysqli_close($con);
+        
 
     }
 ?>
