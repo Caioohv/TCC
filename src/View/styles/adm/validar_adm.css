@@ -1,14 +1,15 @@
 .main{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 225vh;
+    
 }
 
 .container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    padding: 6vh 18vw;
 }

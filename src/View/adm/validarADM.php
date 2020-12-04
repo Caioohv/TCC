@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/table.css">
     <link rel="stylesheet" href="../styles/button.css">
     <!-- Específicos -->
-    
+    <link rel="stylesheet" href="../styles/adm/validar_adm.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -48,9 +48,10 @@
 
 
     <!-- Conteúdo da página -->
-    <div class="admin">
+    <div class="main">
         <h1>Validar Administradores</h1>
-        <div class="table-responsive" style="width: 100%; height: 200px;">
+        <!-- table-responsive -->
+        <div class=" container" style="width: 100%; height: 60vh;">
             <table>
                 <tbody>
                     <tr>

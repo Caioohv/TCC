@@ -21,7 +21,7 @@
         <div class="div-central">
             <h1>Bem-vindo</h1>
             <form action="../../Model/login/login_auth.php" method="post">
-                <input type="text" name="txtUser" id="txtUser" class="caixaTexto" placeholder="Usuário">
+                <input type="text" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
                 <br>
                 <input type="password" name="txtPass" id="txtPass" class="caixaTexto" placeholder="Senha">
                 <br>

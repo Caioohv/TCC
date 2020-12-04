@@ -52,73 +52,75 @@
     </div>
 
     <!-- Conteúdo da Página -->
-    <div class="main">
-        <h1>Caixas</h1>
-        <br>
-        <div class="formPesquisa">
-            <form action="" method="POST" name="fdmView">
-                <input type="text" name="txtcod" id="txtcod" class="caixaTexto" placeholder="Código">
-                <input type="text" name="txtlocal" id="txtlocal" class="caixaTexto" placeholder="Cidade">
-                <input type="text" name="txtnome" id="txtnome" class="caixaTexto" placeholder="Nome">
-        </div>
-        <br>
-        <div class="tableCaixas">
-            <table>
-                <tr>
-                    <th class="id">Id</th>
-                    <th>Cidade</th>
-                    <th>Nome</th>
-                    <th>Atividade</th>
-                    <th>Editar</th>
-                </tr>
-                <tr>
-                    <td class="id">c000001</td>
-                    <td>Ouro Preto</td>
-                    <td>Caixa da praça 7</td>
-                    <td>08:00h - 22:00h</td>
-                    <td>
-                        <div class="botoesEdit">
-                            <a href="editarCaixa.php">Editar</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="id">c000002</td>
-                    <td>Ouro Preto</td>
-                    <td>Caixa da Igreja do Centro</td>
-                    <td>09:00h - 21:00h</td>
-                    <td>
-                        <div class="botoesEdit">
-                            <a href="editarCaixa.php">Editar</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="id">c000003</td>
-                    <td>Ouro Preto</td>
-                    <td>Caixa da Avenida</td>
-                    <td>06:00h - 00:00h</td>
-                    <td>
-                        <div class="botoesEdit">
-                            <a href="editarCaixa.php">Editar</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="id">c000004</td>
-                    <td>Ouro Preto</td>
-                    <td>Caixa da Vila</td>
-                    <td>08:00h - 20:00h</td>
-                    <td>
-                        <div class="botoesEdit">
-                            <a href="editarCaixa.php">Editar</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <div class="teste">
+        <div class="main">
+            <h1>Caixas</h1>
+            <br>
+            <div class="formPesquisa">
+                <form action="" method="POST" name="fdmView">
+                    <input type="text" name="txtcod" id="txtcod" class="caixaTexto" placeholder="Código">
+                    <input type="text" name="txtlocal" id="txtlocal" class="caixaTexto" placeholder="Cidade">
+                    <input type="text" name="txtnome" id="txtnome" class="caixaTexto" placeholder="Nome">
+            </div>
+            <br>
+            <div class="tableCaixas">
+                <table>
+                    <tr>
+                        <th class="id">Id</th>
+                        <th>Cidade</th>
+                        <th>Nome</th>
+                        <th>Atividade</th>
+                        <th>Editar</th>
+                    </tr>
+                    <tr>
+                        <td class="id">c000001</td>
+                        <td>Ouro Preto</td>
+                        <td>Caixa da praça 7</td>
+                        <td>08:00h - 22:00h</td>
+                        <td>
+                            <div class="botoesEdit">
+                                <a href="editarCaixa.php">Editar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">c000002</td>
+                        <td>Ouro Preto</td>
+                        <td>Caixa da Igreja do Centro</td>
+                        <td>09:00h - 21:00h</td>
+                        <td>
+                            <div class="botoesEdit">
+                                <a href="editarCaixa.php">Editar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">c000003</td>
+                        <td>Ouro Preto</td>
+                        <td>Caixa da Avenida</td>
+                        <td>06:00h - 00:00h</td>
+                        <td>
+                            <div class="botoesEdit">
+                                <a href="editarCaixa.php">Editar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">c000004</td>
+                        <td>Ouro Preto</td>
+                        <td>Caixa da Vila</td>
+                        <td>08:00h - 20:00h</td>
+                        <td>
+                            <div class="botoesEdit">
+                                <a href="editarCaixa.php">Editar</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-        
+            
+        </div>
     </div>
 
 </body>
