@@ -1,5 +1,6 @@
 <?php
-if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
+//if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
+if(isset($_COOKIE['usuario'])){
     ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -78,13 +79,12 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
             <?php
                 }
                 else { //CASO NÃO ESTEJA AUTENTICADO
-                echo '<div class="aviso">Acesso restrito ao administrador.</div>';
+                //echo '<div class="aviso">Acesso restrito ao administrador.</div>';
+                echo "<script language='javascript' type='text/javascript'>alert('Acesso restrito ao administrador.');";
+                echo "javascript:window.location='../../index.php';</script>";
             }
         ?>
 
     </body>
 
     </html>
-    <?php
-}
-?>

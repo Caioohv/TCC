@@ -1,6 +1,6 @@
 .sidenav {
     height: 100%; /* altura máxima */
-    width: 20vh; /* largura da sidebar */
+    width: 200px; /* largura da sidebar */
     position: fixed; /* a sidebar fica fixa */
     z-index: 1; /* aparece acima de tudo */
     top: 0; 

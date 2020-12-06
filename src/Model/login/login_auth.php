@@ -26,29 +26,20 @@ while($row = mysqli_fetch_array($result)) {
     if($row['pass_adm'] == $pass_adm){
         echo 'senha correta';
         $validasenha = 1;
+        
     }else{
         echo 'senha incorreta';
     }
     echo '<br>';
 }
-/*
-//if (isset($senha)) {
-    if (mysqli_num_rows($result)<=0 && $validasenha != 1){
-        echo"<script language='javascript' type='text/javascript'>alert('Login e/ou senha incorretos');</script>";
-        die();
-    }else{
-        setcookie("login",$email_adm);
-        setcookie("senha",$pass_adm);
-        echo 'logou';
-        //echo "<script language='javascript' type='text/javascript'>alert('Login efetuado com sucesso!');";
-        //echo "javascript:window.location='../../index.php';</script>";
-    }
-    */
-//}
+
 
     if($validasenha == 1){
-        setcookie("login",$email_adm);
-        setcookie("senha",$pass_adm);
+        
+        $nm_cookie = 'usuario';
+        $vlr_cookie = $row['nm_adm'];
+        
+        setcookie($nm_cookie, $vlr_cookie, time()+(86400), "/"); //86400 = 1 dia
         //echo 'logou';
         echo "<script language='javascript' type='text/javascript'>alert('Login efetuado com sucesso!');";
         echo "javascript:window.location='../../index.php';</script>";

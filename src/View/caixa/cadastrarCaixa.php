@@ -1,11 +1,8 @@
-<?php
-if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
-    ?>
-    <!DOCTYPE html>
-    <html lang="pt-br">
 
-    <head>
-        <!-- Latest compiled and minified CSS -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -79,15 +76,5 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
             </div>
             <p class="teste">aaaaaaaaaaaaaaaa</p>
         </div>
-        <?php
-                }
-                else { //CASO NÃO ESTEJA AUTENTICADO
-                echo '<div class="aviso">Acesso restrito ao administrador.</div>';
-            }
-        ?>
-        
     </body>
     </html>
-    <?php
-}
-?>

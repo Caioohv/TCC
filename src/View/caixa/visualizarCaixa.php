@@ -1,8 +1,6 @@
-<?php
-if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
-    ?>
-    <!DOCTYPE html>
-    <html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
@@ -61,22 +59,24 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
                 <h1>Caixas</h1>
                 <br>
                 <div class="formPesquisa">
-                    <form action="" method="POST" name="fdmView">
+                    <form action="visualizarCaixa.php" method="POST" name="fdmView">
                         <input type="text" name="txtcod" id="txtcod" class="caixaTexto" placeholder="Código">
                         <input type="text" name="txtlocal" id="txtlocal" class="caixaTexto" placeholder="Cidade">
                         <input type="text" name="txtnome" id="txtnome" class="caixaTexto" placeholder="Nome">
+                        <input type="submit" value="Pesquisar">
+                    </form>
                 </div>
                 <br>
                 <div class="tableCaixas">
                     <table>
                         <tr>
                             <th class="id">Id</th>
-                            <th>Cidade</th>
                             <th>Nome</th>
-                            <th>Atividade</th>
+                            <th>Endereço</th>
+                            <th>Status</th>
                             <th>Editar</th>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td class="id">c000001</td>
                             <td>Ouro Preto</td>
                             <td>Caixa da praça 7</td>
@@ -86,56 +86,39 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
                                     <a href="editarCaixa.php">Editar</a>
                                 </div>
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="id">c000002</td>
-                            <td>Ouro Preto</td>
-                            <td>Caixa da Igreja do Centro</td>
-                            <td>09:00h - 21:00h</td>
-                            <td>
-                                <div class="botoesEdit">
-                                    <a href="editarCaixa.php">Editar</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="id">c000003</td>
-                            <td>Ouro Preto</td>
-                            <td>Caixa da Avenida</td>
-                            <td>06:00h - 00:00h</td>
-                            <td>
-                                <div class="botoesEdit">
-                                    <a href="editarCaixa.php">Editar</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="id">c000004</td>
-                            <td>Ouro Preto</td>
-                            <td>Caixa da Vila</td>
-                            <td>08:00h - 20:00h</td>
-                            <td>
-                                <div class="botoesEdit">
-                                    <a href="editarCaixa.php">Editar</a>
-                                </div>
-                            </td>
-                        </tr>
+                        </tr> -->
+                        <?php
+                        
+                        include_once '../../Model/conexao.php';
+
+                        if($con -> connect_error){
+                            die("Falha na conexão com o banco de dados: " . $con->connection_error);
+                        }
+                        
+                        $sql = "SELECT * FROM caixa";// WHERE id_caixa like".$_POST['txtcod']." AND endereco_caixa like ".$_POST['txtlocal']." AND nm_caixa like ".$_POST['txtnome'].";";
+                        $result = mysqli_query($con, $sql);
+                        
+                        if($result->num_rows > 0){
+                            while($row = $result -> fetch_assoc()){
+                                echo '<tr>';
+                                echo '<td> '.$row['id_caixa'].'</td>';
+                                echo '<td> '.$row['nm_caixa'].'</td>';
+                                echo '<td> '.$row['endereco_caixa'].'</td>';
+                                echo '<td> '.$row['endereco_caixa'].'</td>';
+                                echo '<td><div class="botoesEdit"><a href="editarCaixa.php">Editar</a></div></td>';
+                                echo '</tr>';
+                            }
+                        }
+
+                        ?>
                     </table>
                 </div>
 
                 
             </div>
         </div>
-        <?php
-                }
-                else { //CASO NÃO ESTEJA AUTENTICADO
-                echo '<div class="aviso">Acesso restrito ao administrador.</div>';
-            }
-        ?>
-
+        
     </body>
 
-    </html>
-    <?php
-}
-?>
+</html>
+    
