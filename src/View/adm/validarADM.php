@@ -1,6 +1,6 @@
-<?php
-if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
-    ?>
+<?php 
+    session_start();
+?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -34,68 +34,85 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
     </head>
     <body>
         <!-- Sidebar -->
-        <div class="sidenav">
-            <div class="side-header">
-                <a href="../../index.php"><h1>Início</h1></a>
-                <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
-                <a href="../login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
-            </div>
-            <div class="links">
-                <!-- Colocar 'class="selected" onde for o selecionado' -->
-                <p><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
-                <p><a href="editarADM.php" class="link">Editar Admin</a></p>
-                <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
-                <p class="selected"><a href="validarADM.php" class="link">Validar Admin</a></p>
-            </div>
-        </div>
+        <?php 
+            if(isset($_SESSION['userId'])){
+                echo '<div class="sidenav">
+                            <div class="side-header">
+                                <a href="../../index.php"><h1>Início</h1></a>
+                                <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
+                                <a href="../login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
+                            </div>
+                            <div class="links">
+                                <p><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
+                                <p><a href="editarADM.php" class="link">Editar Admin</a></p>
+                                <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
+                                <p class="selected"><a href="validarADM.php" class="link">Validar Admin</a></p>
+                            </div>
+                        </div>';
+            }else{
+                echo '<!-- Sidebar -->
+                        <div class="sidenav">
+                            
+                            <div class="links">
+                                
+                                <p><a href="../login/login.php" class="link">Login</a></p>
+
+                            </div>
+                        </div>';
+            }
+        ?>
 
 
         <!-- Conteúdo da página -->
-        <div class="main">
-            <h1>Validar Administradores</h1>
-            <!-- table-responsive -->
-            <div class=" container" style="width: 100%; height: 60vh;">
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Nome</th>
-                            <th>CPF</th>
-                            <th>Email</th>
-                            <th colspan="2">Validar</th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>Carlos Eduardo</th>
-                            <th>12536574198</th>
-                            <th>carloseduardo@gmail.com</th>
-                            <th><input type="submit" value="Permitir" class="btn btn-outline-success"></th>
-                            <th><input type="submit" value="Recusar" class="btn btn-outline-danger"></th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>Saulo Costa</th>
-                            <th>12536574485</th>
-                            <th>sauloeduardo@gmail.com</th>
-                            <th><input type="submit" value="Permitir" class="btn btn-outline-success"></th>
-                            <th><input type="submit" value="Recusar" class="btn btn-outline-danger"></th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>Daniela Ferriera</th>
-                            <th>14536574485</th>
-                            <th>danielaferreira@gmail.com</th>
-                            <th><input type="submit" value="Permitir" class="btn btn-outline-success"></th>
-                            <th><input type="submit" value="Recusar" class="btn btn-outline-danger"></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <?php 
+            if(isset($_SESSION['userId'])){
+                echo '<div class="main">
+                        <h1>Validar Administradores</h1>
+                        <!-- table-responsive -->
+                        <div class=" container" style="width: 100%; height: 60vh;">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>CPF</th>
+                                        <th>Email</th>
+                                        <th colspan="2">Validar</th>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th>Carlos Eduardo</th>
+                                        <th>12536574198</th>
+                                        <th>carloseduardo@gmail.com</th>
+                                        <th><input type="submit" value="Permitir" class="btn btn-outline-success"></th>
+                                        <th><input type="submit" value="Recusar" class="btn btn-outline-danger"></th>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th>Saulo Costa</th>
+                                        <th>12536574485</th>
+                                        <th>sauloeduardo@gmail.com</th>
+                                        <th><input type="submit" value="Permitir" class="btn btn-outline-success"></th>
+                                        <th><input type="submit" value="Recusar" class="btn btn-outline-danger"></th>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th>Daniela Ferriera</th>
+                                        <th>14536574485</th>
+                                        <th>danielaferreira@gmail.com</th>
+                                        <th><input type="submit" value="Permitir" class="btn btn-outline-success"></th>
+                                        <th><input type="submit" value="Recusar" class="btn btn-outline-danger"></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>';
+            }else{
+                echo '<p style="padding: 500px">Acesso restrito</p>';
+            }
+        ?>  
+        
     </body>
     </html>
-    <?php
-}
-?>

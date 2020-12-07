@@ -1,6 +1,6 @@
-<?php
-if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
-    ?>
+<?php 
+    session_start();
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -33,32 +33,46 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
 
 
     <body>
+    
         <!-- Sidebar -->
-        <div class="sidenav">
-            <div class="side-header">
-                <a href="../../index.php"><h1>Início</h1></a>
-                <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
-                <a href="../login/logout.php"><img src="../styles/icons/logout" alt=""></a>
-            </div>
-            <div class="links">
-                <!-- Colocar 'class="selected" onde for o selecionado' -->
+        <?php 
+            if(isset($_SESSION['userId'])){
+                echo '<div class="sidenav">
+                            <div class="side-header">
+                                <a href="../../index.php"><h1>Início</h1></a>
+                                <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
+                                <a href="../login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
+                            </div>
+                            <div class="links">
+                                <p class="selected"><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
+                                <p><a href="editarADM.php" class="link">Editar Admin</a></p>
+                                <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
+                                <p><a href="validarADM.php" class="link">Validar Admin</a></p>
+                            </div>
+                        </div>';
+            }else{
+                echo '<!-- Sidebar -->
+                        <div class="sidenav">
+                            
+                            <div class="links">
+                                
+                                <p><a href="../login/login.php" class="link">Login</a></p>
 
-                <p class="selected"><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
-                <p><a href="editarADM.php" class="link">Editar Admin</a></p>
-                <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
-                <p><a href="validarADM.php" class="link">Validar Admin</a></p>
-
-            </div>
-        </div>
+                            </div>
+                        </div>';
+            }
+        ?>
 
         <!-- Conteúdo da Página -->
-        <div class="main">
+        <?php 
+            if(isset($_SESSION['userId'])){
+                echo '<div class="main">
             <h1>Cadastrar Administrador</h1>
             <?php
                 //imprime o valor da variável global da mensagem, e a destrói depois disso
-                if(isset($_SESSION['msg'])){
-                    echo $_SESSION['msg'];
-                    unset ($_SESSION['msg']);
+                if(isset($_SESSION["msg"])){
+                    echo $_SESSION["msg"];
+                    unset ($_SESSION["msg"]);
                 }
             ?>
             <form action="../../Model/adm/inserir_adm.php" method="POST" name="fdmCadastro">
@@ -73,17 +87,14 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
                         <input type="submit" value="Cadastrar" class="btn btn-outline-primary">
                     </div>
             </form>
-        </div>
-        <?php
-                }
-                else { //CASO NÃO ESTEJA AUTENTICADO
-                echo '<div class="aviso">Acesso restrito ao administrador.</div>';
+        </div>';
+            }else{
+                echo '<p style="padding: 500px">Acesso restrito</p>';
             }
-        ?>
+        ?>  
+        
+        
     </body>
     </html>
-    <?php
-}
-?>
-    
+
     

@@ -1,7 +1,6 @@
-<?php
-//if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
-if(isset($_COOKIE['usuario'])){
-    ?>
+<?php 
+    session_start();
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -38,25 +37,46 @@ if(isset($_COOKIE['usuario'])){
     </head>
 
     <body>
-        <!-- Sidebar -->
-        <div class="sidenav">
-            <div class="side-header">
-                <a href="../../index.php"><h1>Início</h1></a>
-                <a href="../adm/cadastrarADM.php"><img src="../styles/icons/UserIcon.png" alt="" class="link-adm"></a>
-                <a href="../login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
+    <?php 
+        
+        if(isset($_SESSION['userId'])){
+            echo '<!-- Sidebar -->
+            <div class="sidenav">
+                <div class="side-header">
+                    <a href="../../index.php"><h1>Início</h1></a>
+                    <a href="../adm/cadastrarADM.php"><img src="../styles/icons/UserIcon.png" alt="" class="link-adm"></a>
+                    <a href="../login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
+                </div>
+                <div class="links">
+                    
+                    <p><a href="cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
+                    <p class="selected"><a href="manutencaoCaixa.php" class="link">Manutenção</a></p>
+                    <p><a href="visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
+                    <p><a href="editarCaixa.php" class="link">Editar Caixa</a></p>
+                    <p><a href="pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
+                    <a href="../../Model/login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
+                </div>
             </div>
-            <div class="links">
-                <!-- Colocar 'class="selected" onde for o selecionado' -->
-                <p><a href="cadastrarCaixa.php" class="link">Cadastrar Caixa</a></p>
-                <p class="selected"><a href="manutencaoCaixa.php" class="link">Manutenção</a></p>
-                <p><a href="visualizarCaixa.php" class="link">Visualizar Caixas</a></p>
-                <p><a href="editarCaixa.php" class="link">Editar Caixa</a></p>
-                <p><a href="pesquisarCaixa.php" class="link">Pesquisar Caixa</a></p>
-            </div>
-        </div>
+    ';
+        }else{
+            echo '<!-- Sidebar -->
+            <div class="sidenav">
+                
+                <div class="links">
+                    
+                    <p><a href="../login/login.php" class="link">Login</a></p>
 
+                </div>
+            </div>';
+            
+        }
+        
+        
+        ?>
         <!-- Conteúdo da Página -->
-        <div class="main">
+        <?php 
+            if(isset($_SESSION['userId'])){
+                echo '<div class="main">
             <h1>Editar Caixa</h1>
             <br>
             <div class="textoCentral">
@@ -75,15 +95,15 @@ if(isset($_COOKIE['usuario'])){
                         <input type="submit" value="Atualizar" class="btn btn-outline-primary">
                     </div>
                 </form>
-            </div>
-            <?php
-                }
-                else { //CASO NÃO ESTEJA AUTENTICADO
-                //echo '<div class="aviso">Acesso restrito ao administrador.</div>';
-                echo "<script language='javascript' type='text/javascript'>alert('Acesso restrito ao administrador.');";
-                echo "javascript:window.location='../../index.php';</script>";
+            </div>';
+            }else{
+                echo '<p style="padding: 500px">Acesso restrito</p>';
             }
-        ?>
+        ?>  
+
+        
+        
+
 
     </body>
 

@@ -1,6 +1,6 @@
-<?php
-if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
-    ?>
+<?php 
+    session_start();
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -34,50 +34,61 @@ if (isset($_SESSION['login'])) { //SE EXISTIR AUTENTICAÇÃO
 
     <body>
         <!-- Sidebar -->
-        <div class="sidenav">
-            <div class="side-header">
-                <a href="../../index.php"><h1>Início</h1></a>
-                <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
-                <a href="../login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
-            </div>
-            <div class="links">
-                <!-- Colocar 'class="selected" onde for o selecionado' -->
-                <p><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
-                <p class="selected"><a href="editarADM.php" class="link">Editar Admin</a></p>
-                <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
-                <p><a href="validarADM.php" class="link">Validar Admin</a></p>
-            </div>
-        </div>
+        <?php 
+            if(isset($_SESSION['userId'])){
+                echo '<div class="sidenav">
+                            <div class="side-header">
+                                <a href="../../index.php"><h1>Início</h1></a>
+                                <a href="../caixa/cadastrarCaixa.php"><img src="../styles/icons/UserIcon.png" alt=""></a>
+                                <a href="../login/logout.php"><img src="../styles/icons/logout.png" alt=""></a>
+                            </div>
+                            <div class="links">
+                                <p><a href="cadastrarADM.php" class="link">Cadastrar Admin</a></p>
+                                <p class="selected"><a href="editarADM.php" class="link">Editar Admin</a></p>
+                                <p><a href="visualizarADM.php" class="link">Visualizar Admin</a></p>
+                                <p><a href="validarADM.php" class="link">Validar Admin</a></p>
+                            </div>
+                        </div>';
+            }else{
+                echo '<!-- Sidebar -->
+                        <div class="sidenav">
+                            
+                            <div class="links">
+                                
+                                <p><a href="../login/login.php" class="link">Login</a></p>
 
-        <!-- Conteúdo da Página -->
-        <div class="main">
-            <h1>Minha Conta</h1>
-            <form action="" method="POST" name="fdmCadastro">
-                <div class="textoCentral">
-                    <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto" placeholder="CPF" disabled>
-                    <br><br>
-                    <input type="text" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
-                    <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
-                    <br><br>
-                </div>
-                <div class="textoCentral">
-                    <input type="password" name="txtSenha" id="txtSenha" class="caixaTexto" placeholder="Nova Senha">
-                    <input type="password" name="txtSenhaC" id="txtSenhaC" class="caixaTexto" placeholder="Confirmar senha">
-                </div>
-                <br><br>
-                <div class="fbotao">
-                    <input type="submit" value="Atualizar" class="btn btn-outline-primary">
-                </div>
-            </form>
-        </div>
-        <?php
-                }
-                else { //CASO NÃO ESTEJA AUTENTICADO
-                echo '<div class="aviso">Acesso restrito ao administrador.</div>';
+                            </div>
+                        </div>';
             }
         ?>
+
+        <!-- Conteúdo da Página -->
+        <?php 
+            if(isset($_SESSION['userId'])){
+                echo '<div class="main">
+                        <h1>Minha Conta</h1>
+                        <form action="" method="POST" name="fdmCadastro">
+                            <div class="textoCentral">
+                                <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto" placeholder="CPF" disabled>
+                                <br><br>
+                                <input type="text" name="txtEmail" id="txtEmail" class="caixaTexto" placeholder="Email">
+                                <input type="text" name="txtNome" id="txtNome" class="caixaTexto" placeholder="Nome">
+                                <br><br>
+                            </div>
+                            <div class="textoCentral">
+                                <input type="password" name="txtSenha" id="txtSenha" class="caixaTexto" placeholder="Nova Senha">
+                                <input type="password" name="txtSenhaC" id="txtSenhaC" class="caixaTexto" placeholder="Confirmar senha">
+                            </div>
+                            <br><br>
+                            <div class="fbotao">
+                                <input type="submit" value="Atualizar" class="btn btn-outline-primary">
+                            </div>
+                        </form>
+                    </div>';
+            }else{
+                echo '<p style="padding: 500px">Acesso restrito</p>';
+            }
+        ?>  
+        
     </body>
     </html>
-    <?php
-}
-?>

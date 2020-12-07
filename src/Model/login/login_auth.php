@@ -3,28 +3,18 @@
 include '../conexao.php';
 
 $email_adm = $_POST['txtEmail'];
-echo $email_adm;
-echo ' - ';
-$pass_adm = md5($_POST['txtPass']);
-echo $pass_adm;
-echo '<br> ';
+$pass_adm = ($_POST['txtPass']);
+// $pass_adm = md5($_POST['txtPass']);
+echo '<p>usr: '.$email_adm.' - pass: '.$pass_adm.'</p>';
 $sql = "SELECT * FROM admin where email_adm = '$email_adm';";
-echo $sql;
 
 $validasenha = 0;
 
 $result = mysqli_query($con, $sql) ; //or die("Usuário ou senha inválidos")
-echo '<br>';
-echo '<br>';
-echo '<br>';
-echo '<h3>Resultados</h3>';
 while($row = mysqli_fetch_array($result)) {
-    echo $row['email_adm'];
-    echo ' - ';
-    echo $row['nm_adm'];
-    echo ' - ';
+    echo '<p>usr: '.$row['email_adm'].' - pass: '.$row['pass_adm'].'</p>';
     if($row['pass_adm'] == $pass_adm){
-        echo 'senha correta';
+        echo '<p>senha correta</p>';
         $validasenha = 1;
         
     }else{
@@ -35,12 +25,16 @@ while($row = mysqli_fetch_array($result)) {
 
 
     if($validasenha == 1){
+        session_start();
         
-        $nm_cookie = 'usuario';
-        $vlr_cookie = $row['nm_adm'];
+        $_SESSION["userId"] = $email_adm;
+        $_SESSION["userPass"] = $pass_adm;
         
-        setcookie($nm_cookie, $vlr_cookie, time()+(86400), "/"); //86400 = 1 dia
-        //echo 'logou';
+        // $nm_cookie = 'usuario';
+        // $vlr_cookie = $row['nm_adm'];
+        
+        // setcookie($nm_cookie, $vlr_cookie, time()+(86400), "/"); //86400 = 1 dia
+        
         echo "<script language='javascript' type='text/javascript'>alert('Login efetuado com sucesso!');";
         echo "javascript:window.location='../../index.php';</script>";
     }else{
