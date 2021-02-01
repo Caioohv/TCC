@@ -1,9 +1,9 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-
-.todo{
-
-    
+/* Div do body inteiro */
+.todo{    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,14 +12,28 @@
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
+/* Div do login */
 .login-div{
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+}
+.login-div h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    font-size: 5rem;
+
+    color: var(--laranja);
+
+}
+
+/* Form */
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

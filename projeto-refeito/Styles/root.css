@@ -2,10 +2,12 @@
 :root {
     --laranja: #f37021;
     --azul: #00bcd0;
+
+    font-size: 10px;
 }
 
 
 /* Importação de fontes */
 /* font-family: 'Bebas Neue', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
