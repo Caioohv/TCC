@@ -6,5 +6,4 @@
     $senha = "caio_isabella";
     $nomeBD = "caio_isabella";
     $con = new mysqli($servidor, $usuario, $senha, $nomeBD);
-
 ?>

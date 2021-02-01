@@ -80,7 +80,7 @@
         <!-- Conteúdo da Página -->
         <?php 
             if(isset($_SESSION['userId'])){
-                include '../caixa/aaa.php';
+                include '../caixa/listarCaixas.php';
             }else{
                 echo '<p style="padding: 500px">Acesso restrito</p>';
             }

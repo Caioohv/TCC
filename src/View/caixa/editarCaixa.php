@@ -41,6 +41,7 @@
 
     <?php 
         
+
         if(isset($_SESSION['userId'])){
             echo '<!-- Sidebar -->
             <div class="sidenav">
