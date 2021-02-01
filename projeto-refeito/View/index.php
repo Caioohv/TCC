@@ -1,17 +1,18 @@
 <?php 
-    session_start();
+    //session_start();
 
-    include 'includes/header.php';
+    include '../View/Includes/head.php';
 
-    if(isset($_SESSION['userId'])){
+    // if(isset($_SESSION['userId'])){
+    
 
-        include 'includes/initial.php';
+        include '../View/Includes/initial.php';
 
-    }else{
+    //}else{
 
-        include 'includes/login.php';
+    //    include '../View/Includes/login.php';
 
-    }
+    //}
 
 ?>
 
