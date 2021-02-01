@@ -4,7 +4,7 @@
 
 
 /* Body */
-body{
+.login {
     background-color: var(--laranja);
 }
 
@@ -73,7 +73,7 @@ body{
 .login-div-btn{
     padding-top: 3vh;
 }
-.login-div-btn button{
+.login-div-btn{
     background-color: var(--laranja); 
     
     border: none;
