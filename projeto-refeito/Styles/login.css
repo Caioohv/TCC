@@ -1,6 +1,12 @@
 /* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://use.typekit.net/msu5all.css");
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
+
+/* Body */
+body{
+    background-color: var(--laranja);
+}
 
 /* Div do body inteiro */
 .todo{    
@@ -9,9 +15,16 @@
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    
+    background-color: var(--branco);
+    padding: 3vh 2vw;
+    border-radius: 1.6rem;
+
+    
 }
 
 /* Div do login */
@@ -22,11 +35,12 @@
     flex-direction: column;
 }
 .login-div h1{
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 100;
-    font-size: 5rem;
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.2rem;
 
-    color: var(--laranja);
+    color: var(--cinza);
 
 }
 
@@ -37,3 +51,56 @@
     justify-content: center;
     flex-direction: column;
 }
+
+/* Inputs do login */
+.login-input{
+
+    background-color: var(--branco);
+    color: var(--cinza);
+    
+    position:relative;
+    padding: 1vh 1vw;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--cinza);
+
+    font-size: 1.5rem;
+}
+
+
+
+.login-div-btn{
+    padding-top: 3vh;
+}
+.login-div-btn button{
+    background-color: var(--laranja); 
+    
+    border: none;
+    border-radius: 1rem;
+
+    color: white;
+    padding: 1.4vh 1.4vw 1vh 1.4vw;
+    
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+
+
+/* Utilização das fontes
+Bebas Neue Regular
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+font-family: 'Archivo', sans-serif;
+
+
+*/

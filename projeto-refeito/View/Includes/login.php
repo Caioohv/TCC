@@ -4,16 +4,14 @@
 
         <div class="login-div">
             <form class="login-form">
-                <h1>Sign In</h1>
-
-                <input type="text" name="username" placeholder="Username">
+                <!-- <h1>Login</h1> -->
+                <br><br>
+                <input class="login-input" type="text" name="username" placeholder="Usuário">
                 <br>
-                <input type="password" name="pass" placeholder="Password">
+                <input class="login-input" type="password" name="pass" placeholder="Senha">
                 <br>
-                <div>
-                    <button>
-                        Sign in
-                    </button>
+                <div class="login-div-btn">
+                    <button>Login</button>
                 </div>
             </form>
         </div>
