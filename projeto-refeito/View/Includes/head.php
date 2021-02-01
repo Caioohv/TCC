@@ -9,9 +9,9 @@
     <!-- CSS -->
     <link rel='stylesheet' type='text/css' media='screen' href='Styles/root.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='Styles/login.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='Styles/default.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='Styles/caixa.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='Styles/top-bar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Styles/padrao.css'>
     
 
     <!-- JS -->

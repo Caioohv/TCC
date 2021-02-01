@@ -26,7 +26,7 @@ while($row = mysqli_fetch_array($result)) {
         $_SESSION["userId"] = $email_adm;
         $_SESSION["userPass"] = $pass_adm;
         
-        echo "<script language='javascript' type='text/javascript'>alert('Login efetuado com sucesso!');";
+        echo "<script language='javascript' type='text/javascript'>";
         echo "javascript:window.location='../../index.php?page=initial';</script>";
     }else{
         //echo 'senha errada';

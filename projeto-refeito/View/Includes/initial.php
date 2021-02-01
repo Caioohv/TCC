@@ -1,1 +1,5 @@
-<p class="p-titulo">Bem Vindo</p>
+<div class="content">
+    <p>Bem Vindo</p>
+</div>
+
+
