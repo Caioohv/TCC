@@ -5,12 +5,11 @@
 
     // if(isset($_SESSION['userId'])){
     
-
-        include '../View/Includes/initial.php';
+    //include '../View/Includes/initial.php';
 
     //}else{
 
-    //    include '../View/Includes/login.php';
+    include '../View/Includes/login.php';
 
     //}
 

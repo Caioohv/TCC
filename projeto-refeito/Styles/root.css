@@ -1,6 +1,7 @@
 /*Definição da paleta de cores*/
 :root {
-    
     --laranja: #f37021;
     --azul: #00bcd0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
