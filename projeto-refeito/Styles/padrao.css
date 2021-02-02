@@ -6,20 +6,23 @@
 .content{
     width: 100%;
     height: 100%;
-    padding-top: 20vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-items: center;
-    
 }
-
 .content p{
     font-size: 10rem;
     font-family: 'Archivo', sans-serif;
+    color: var(--cinza);
 }
-
+.content h1{
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+    color: var(--cinza);
+}
 
 
 
