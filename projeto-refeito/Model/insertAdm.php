@@ -12,6 +12,8 @@ include_once 'conexao.php';
         //inserindo no banco de dados a query 
         $sql = "INSERT INTO admin (cpf_adm, email_adm, pass_adm, nm_adm) VALUES
         ('$cpf_adm', '$email_adm', '$pass_adm', '$nm_adm');";
+
+        echo $sql;
         
         //validando erro
         if($con->query($sql) == TRUE){
@@ -33,40 +35,4 @@ include_once 'conexao.php';
         }
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-
-
-        echo $result;
-
-        //executando query
-        $result = mysqli_query($con, $result);
-
-        //vereficando se o comando foi executado com sucesso
-        if($result){
-            echo"<script language='javascript' type='text/javascript'> 
-                    alert('Administrador cadastrado com sucesso!');
-                </script>";
-            header('location:../adm/crudADM/cadastrarADM.php');
-        }else{
-        
-            echo"<script language='javascript' type='text/javascript'> 
-                    alert('Não foi possível cadastrar esse usuário');
-                </script>";
-            header('location:../adm/crudADM/cadastrarADM.php');
-        }
-
-        mysqli_close($con);
     
