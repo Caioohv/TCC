@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
 
+
 .content{
     width: 100%;
     height: 100%;
@@ -23,6 +24,79 @@
     font-family: 'Archivo', sans-serif;
     color: var(--cinza);
 }
+
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.main .container{
+    width: 100%;
+    height: 100%;
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.main .container p{
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;   
+    font-weight: 300;
+    text-align: center;
+    color: var(--cinza);
+}
+.main .container h1{
+    font-size: 2.4rem;
+    font-family: 'Archivo', sans-serif;   
+    font-weight: 500;
+    color: var(--cinza);
+}
+
+.form-cad-caixa{
+    
+}
+.form-cad-caixa input, select{
+    padding: 0.4vh 1.1vw 0.4vh 1.1vw;
+    margin: 1rem;
+    border-collapse: collapse;
+    border-style: none;
+    border-bottom: 1px solid var(--cinza);
+    font-family: 'Archivo', sans-serif;
+    color: var(--cinza);
+}
+.form-cad-caixa select{
+    padding-right: 4.7vw;
+    background-color: var(--branco);
+    color: var(--cinza);
+}
+.form-cad-caixa{
+    
+}
+.btn{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn input{
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    margin: 2vh 2vw 2vh 2vw;
+    padding: 1.75vh 1vw 1vh 1vw;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+}
+
 
 
 
