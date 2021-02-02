@@ -1,5 +1,5 @@
 <?php 
-    include_once('../../Model/conexao.php');
+    include_once('Model/conexao.php');
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -26,7 +26,7 @@
         <script>
             function confirmarExclusao(id,nm){
                 if(window.coonfirm("Deseja realmente apagar o registro de"+nm+ " ?")){
-                    window.location = "../../Model/adm/excluirAdm.php?id_adm=" + id;
+                    window.location = "Model/adm/excluirAdm.php?id_adm=" + id;
                 }
             }
 

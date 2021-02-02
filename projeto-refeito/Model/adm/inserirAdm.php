@@ -1,7 +1,9 @@
 <?php
+session_start();
 //incluindo o arquivo de conexão
-include_once('../conexao.php');
+include_once '../conexao.php';
 
+    if(isset($_POST['submit'])){
         //recebendo os dados que vieram do formulário
         $cpf_adm = $_POST['txtCpf'];
         $email_adm = $_POST['txtEmail'];
@@ -32,6 +34,7 @@ include_once('../conexao.php');
 
             <?php
         }
+    }
 ?>
 
     
