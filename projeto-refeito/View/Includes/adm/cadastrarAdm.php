@@ -1,5 +1,5 @@
 <?php 
-    include_once('../../Model/conexao.php');
+    include_once('Model/conexao.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
  <!-- Conteúdo da Página -->
  
         <h1>Cadastrar Administrador</h1>
-        <form action="../../Model/adm/inserirAdm.php" method="POST">
+        <form action="Model/adm/inserirAdm.php" method="POST">
             <input type="email" name="txtEmail" id="txtEmail" class="caixaTexto"  required placeholder="Email" autofocus>
             <input type="text" name="txtNome" id="txtNome" class="caixaTexto"  required placeholder="Nome">
             <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto"  required placeholder="CPF">

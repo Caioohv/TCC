@@ -1,5 +1,5 @@
 <?php
-    include_once('../../Model/conexao.php');
+    include_once('Model/conexao.php');
         //receber os dados do form
         $email_adm = $_POST['txtEmail'];
         $nm_adm = $_POST['txtNome'];
@@ -14,7 +14,7 @@
             ?>
             <script>
                 alert("Alteração salva com sucesso!");
-                window.location = "../../View/adm/visualizarAdm/php";
+                window.location = "visualizarAdm/php";
             </script>
             <?php
         }else{
