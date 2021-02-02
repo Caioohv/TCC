@@ -1,5 +1,5 @@
 <?php 
-    include_once('conexao.php');
+    include_once('../../Model/conexao.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@
             <br><br>
 
             <input type="submit" class="btn btn-primary" value="Cadastrar">
-            <input type="submit" class="btn btn-warning" value="Cancelar">
+            <input type="reset" class="btn btn-warning" value="Cancelar">
         </form>
 
 </body>

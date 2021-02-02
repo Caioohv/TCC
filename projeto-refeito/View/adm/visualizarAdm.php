@@ -1,5 +1,5 @@
 <?php 
-    include_once ('conexao.php');
+    include_once('../../Model/conexao.php');
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -65,7 +65,7 @@
                             <td><?php echo $exibir['nm_adm ']?></td>
                             <td><?php echo $exibir['cpf_adm']?></td>
                             <td><?php echo $exibir['email_adm']?></td> 
-                            <td><a href="">Editar</a></td>  
+                            <td><a href="editarAdm.php?id_adm=<?php echo $exibir['id_adm']?>">Editar</a></td>  
                             <td><a href="#" onclick="confirmarExclusao('<?php echo $exibir['id_adm']?>','<?php echo $exibir['nm_adm ']?>')">Excluir</a></td>                     
                         </tr>
                         <?php
