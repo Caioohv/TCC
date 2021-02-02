@@ -7,7 +7,7 @@ $pass_adm = ($_POST['pass']);
 
 $sql = "SELECT * FROM admin where email_adm = '$email_adm';";
 
-$validasenha = 1;
+$validasenha = 0;
 
 $result = mysqli_query($con, $sql) ; //or die("Usuário ou senha inválidos")
 while($row = mysqli_fetch_array($result)) {

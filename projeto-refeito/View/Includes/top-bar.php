@@ -31,8 +31,8 @@
             //Adm
             if($_GET['page']=='adm'){
                 echo '<li class="item-menu"><a href="index.php?page=cadastrarC">Cadastrar Caixa</a></li>';
-                echo '<li class="item-menu-selected"><a href="index.php?page=visualizarC">Visualizar Caixa</a></li>';
-                echo '<li class="item-menu"><a href="index.php?page=adm">Página do Administrador</a></li>';
+                echo '<li class="item-menu"><a href="index.php?page=visualizarC">Visualizar Caixa</a></li>';
+                echo '<li class="item-menu-selected"><a href="index.php?page=adm">Página do Administrador</a></li>';
             }
 
 
