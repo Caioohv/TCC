@@ -13,7 +13,7 @@
             if($con -> connect_error){
                 die("Falha na conexão com o banco de dados: " . $con->connection_error);
             }
-            $sql = 'DELETE * FROM caixa WHERE id_caixa = '.$_GET['id'];
+            $sql = 'DELETE FROM caixa WHERE id_caixa = '.$_GET['id'];
             //echo $sql;
             $result = mysqli_query($con, $sql);
             
