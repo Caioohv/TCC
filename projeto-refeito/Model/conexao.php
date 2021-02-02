@@ -11,10 +11,4 @@
         die("Falha na conexão".$con->connect_error);
     }
 
-<<<<<<< HEAD
-
-
-    
-=======
->>>>>>> 9cf1bbedc1547f6e1c75755896d07c49c882a595
 ?>
