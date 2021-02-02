@@ -47,12 +47,18 @@
     color: var(--branco);
     text-decoration: none;
 }
-.top-nav li a:visited{
+/* .top-nav li a:visited{
     transition: all 0.3s ease 0s;
     color: var(--branco);
     text-decoration: none;
     
 }
+.top-nav .item-menu-selected li a:visited{
+    transition: all 0.3s ease 0s;
+    color: var(--cinza);
+    text-decoration: none;
+    
+} */
 .top-nav li a:hover{
     color: var(--cinza);
 }

@@ -96,7 +96,18 @@
     font-size: 2.5rem;
     border-radius: 1rem;
 }
+.div-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.hrr{
+    font-size: 1.4rem;
+    font-family: 'Archivo', sans-serif;   
+    color: var(--cinza);
+    
+}
 
 
 

@@ -14,7 +14,13 @@
                 <option value="Inativo">Inativo</option>
                 <option value="Indisponivel">Indisponível</option>
             </select>
-
+            <div class="div-time">
+                <span class="hrr">Abertura</span>
+                <input type="time" name="hrrAbrir"  id="hrrAbrir"  class="caixaTexto">
+                <br>
+                <span class="hrr" >Fechamento</span>
+                <input type="time" name="hrrFechar" id="hrrFechar" class="caixaTexto">
+            </div>
             <!-- Endereço -->
             <p>Endereço</p>
             <input type="text" name="Cidade" id="Cidade" class="caixaTexto" placeholder="Cidade">
@@ -26,6 +32,7 @@
             <input type="text" name="Estado" id="Estado" class="caixaTexto" placeholder="Estado">
             <input type="text" name="Pais"   id="Pais"   class="caixaTexto" placeholder="País">
             <br>
+            
             
 
             <!-- Botão -->
