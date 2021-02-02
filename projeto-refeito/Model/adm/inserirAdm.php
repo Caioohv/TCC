@@ -1,7 +1,7 @@
 <?php
        
 //incluindo o arquivo de conexão
-include_once 'conexao.php';
+include_once ('conexao.php');
       
         //recebendo os dados que vieram do formulário
         $cpf_adm = $_POST['txtCpf'];
@@ -20,7 +20,7 @@ include_once 'conexao.php';
             ?>
             <script>
                 alert("Registo salvo com sucesso!");
-                window.location = "../index.php";
+                window.location = "../../index.php";
             </script>
             <?php
         }else{

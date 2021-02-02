@@ -21,6 +21,17 @@
             href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
             rel="stylesheet">
 
+
+
+        <script>
+            function confirmarExclusao(id,nm){
+                if(window.coonfirm("Deseja realmente apagar o registro de"+nm+ " ?")){
+                    window.location = "../../Model/adm/excluirAdm.php?id_adm=" + id;
+                }
+            }
+
+        </script>
+
     </head>
 
     <body>
@@ -55,7 +66,7 @@
                             <td><?php echo $exibir['cpf_adm']?></td>
                             <td><?php echo $exibir['email_adm']?></td> 
                             <td><a href="">Editar</a></td>  
-                            <td><a href="">Editar</a></td>                     
+                            <td><a href="#" onclick="confirmarExclusao('<?php echo $exibir['id_adm']?>','<?php echo $exibir['nm_adm ']?>')">Excluir</a></td>                     
                         </tr>
                         <?php
                     }
@@ -63,7 +74,10 @@
                 ?>
                 </table>
                     <?php
+            }else{
+                echo "Nenhum registro encontrado";
             }
+
 
         ?>
     </body>
