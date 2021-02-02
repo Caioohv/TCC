@@ -31,6 +31,10 @@
                     $_POST['id-c'] = $_GET['id'];
                     include 'View/Includes/Caixa/excluir.php';//.$idcaixa;
                 }
+                if($_GET['page']=='visualizarA'){
+                    $_POST['id-c'] = $_GET['id'];
+                    include 'View/Includes/adm/visualizarAdm.php';//.$idcaixa;
+                }
 
                 
             }else{

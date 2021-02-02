@@ -4,12 +4,12 @@
         <div class="tableCaixas">
             <table>
                 <tr>
-                    <th>Id</th>
+                    <th class="canto-esq">Id</th>
                     <th>Nome</th>
                     <th>Endereço</th>
                     <th>Status</th>
                     <th>Admin</th>
-                    <th>Editar</th>
+                    <th class="canto-dir">Editar</th>
                 </tr>
                 <?php
                     include 'Model/caixa/loader-caixa.php';

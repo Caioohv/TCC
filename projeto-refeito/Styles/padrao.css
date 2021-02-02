@@ -126,7 +126,16 @@ th{
     padding: 1.5vh 5vw 1.5vh 5vw;
     color: var(--branco);
     background-color: var(--laranja);
+    
 }
+.canto-dir{
+    border-top-right-radius: 1rem;
+}
+.canto-esq{
+    border-top-left-radius: 1rem;
+}
+
+
 td{
     padding: 1vh 1vw 1vh 1vw;
     text-align: left;
