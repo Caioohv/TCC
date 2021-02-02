@@ -107,9 +107,33 @@
     font-family: 'Archivo', sans-serif;   
     color: var(--cinza);
     
+    
 }
 
+table{
+    border-collapse: collapse;
+}
+tr{
 
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th{
+    font-size: 1.6rem;
+    font-family: 'Archivo', sans-serif;
+    padding: 1.5vh 5vw 1.5vh 5vw;
+    color: var(--branco);
+    background-color: var(--laranja);
+}
+td{
+    padding: 1vh 1vw 1vh 1vw;
+    text-align: left;
+    
+    font-size: 1.6rem;
+    font-family: 'Archivo', sans-serif;
+}
 
 
 

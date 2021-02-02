@@ -24,9 +24,15 @@
                     include 'View/Includes/Caixa/visualizar.php';
                 }
                 if($_GET['page']=='editarC'){
-                    $idcaixa = $_GET['idcaixa'];
-                    include 'View/Includes/Caixa/editar.php?idcaixa=$idcaixa';
+                    $_POST['id-c'] = $_GET['id'];
+                    include 'View/Includes/Caixa/editar.php';//.$idcaixa;
                 }
+                if($_GET['page']=='excluirC'){
+                    $_POST['id-c'] = $_GET['id'];
+                    include 'View/Includes/Caixa/excluir.php';//.$idcaixa;
+                }
+
+                
             }else{
                 include 'View/Includes/initial.php';
             }
