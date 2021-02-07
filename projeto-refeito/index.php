@@ -32,8 +32,18 @@
                     include 'View/Includes/Caixa/excluir.php';//.$idcaixa;
                 }
                 if($_GET['page']=='visualizarA'){
-                    $_POST['id-c'] = $_GET['id'];
-                    include 'View/Includes/adm/visualizarAdm.php';//.$idcaixa;
+                    include 'View/Includes/adm/visualizar.php';//.$idcaixa;
+                }
+                if($_GET['page']=='cadastrarA'){
+                    include 'View/Includes/adm/cadastrar.php';//.$idcaixa;
+                }
+                if($_GET['page']=='editarA'){
+                    $_POST['email-a'] = $_GET['email'];
+                    include 'View/Includes/adm/editar.php';//.$idcaixa;
+                }
+                if($_GET['page']=='excluirA'){
+                    $_POST['email-a'] = $_GET['email'];
+                    include 'View/Includes/adm/excluir.php';//.$idcaixa;
                 }
 
                 

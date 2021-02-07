@@ -144,7 +144,13 @@ td{
     font-family: 'Archivo', sans-serif;
 }
 
-
+.container-adm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
 
 
 /* Utilização das fontes
