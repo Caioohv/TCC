@@ -38,11 +38,11 @@
                     include 'View/Includes/adm/cadastrar.php';//.$idcaixa;
                 }
                 if($_GET['page']=='editarA'){
-                    $_POST['email-a'] = $_GET['email'];
+                    $_POST['email-a'] = $_GET['id'];
                     include 'View/Includes/adm/editar.php';//.$idcaixa;
                 }
                 if($_GET['page']=='excluirA'){
-                    $_POST['email-a'] = $_GET['email'];
+                    $_POST['email-a'] = $_GET['id'];
                     include 'View/Includes/adm/excluir.php';//.$idcaixa;
                 }
 

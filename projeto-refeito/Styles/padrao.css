@@ -153,6 +153,20 @@ td{
 }
 
 
+
+.btn-cad-caixa{
+    padding: 0.4vh 1.1vw 0.4vh 1.1vw;
+    margin: 1rem;
+    border-collapse: collapse;
+    border-style: none;
+    border-bottom: 1px solid var(--cinza);
+    font-family: 'Archivo', sans-serif;
+    color: var(--cinza);
+}
+
+
+
+
 /* Utilização das fontes
 Bebas Neue Regular
     font-family: bebas-neue-by-fontfabric, sans-serif;

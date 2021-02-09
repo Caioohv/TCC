@@ -2,7 +2,7 @@
 include '../conexao.php';
 
 $email_adm = $_POST['email'];
-$pass_adm = ($_POST['pass']);
+$pass_adm = MD5($_POST['pass']);
 
 
 $sql = "SELECT * FROM admin where email_adm = '$email_adm';";

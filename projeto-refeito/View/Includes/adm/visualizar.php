@@ -8,9 +8,8 @@
                     <th>Nome</th>
                     <th>CPF</th>
                     <th>Email</th>
-                    <th>Editar</th>
-                    <th>Excluir</th>
-                    <th class="canto-dir">Aprovar</th>
+                    <th class="canto-dir">Ações</th>
+                    <!-- <th>Aprovar</th> -->
                 </tr>
                 <?php
                     include 'Model/adm/loader-adm.php';

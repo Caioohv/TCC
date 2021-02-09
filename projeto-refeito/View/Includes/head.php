@@ -15,5 +15,6 @@
     
 
     <!-- JS -->
-    <script src='../../Controller/main.js'></script>
+    <script src='Controller/main.js'></script>
+    <script src='Controller/adm.js'></script>
 </head>

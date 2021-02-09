@@ -16,25 +16,16 @@ include_once '../conexao.php';
 
         echo $sql;
         
-        //validando erro
-        if($con->query($sql) == TRUE){
-            ?>
-            <script>
-                alert("Registo salvo com sucesso!");
-                window.location = "../../index.php";
-            </script>
-            <?php
+        $result = mysqli_query($con, $sql);
+        if($result){
+            mysqli_close($con);
+            echo "Admin cadastrado com sucesso!";
+            header("location: ../../index.php?page=cadastrarA");
+            
         }else{
-            ?>
-                <script>
-                    alert("Erro ao inserir o registo");
-                    window.history.back();
-                </script>
-
-
-            <?php
+            echo '<p style="color: red; font-size: 3rem;"> Erro ao cadastrar admin</p>';
+            mysqli_close($con);
         }
     }
 ?>
 
-    
