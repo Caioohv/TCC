@@ -27,7 +27,7 @@ include '../conexao.php';
         //inserindo no banco de dados a querry 
 
 
-        $fk_email_adm = 'caioviier@gmail.com';
+        $fk_email_adm = $_SESSION['userId'];
     
         $result = "
         update caixa set

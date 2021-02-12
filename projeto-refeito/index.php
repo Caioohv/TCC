@@ -50,22 +50,13 @@
                 }
                 if($_GET['page']=='bymail'){
 
-
-
-                    
                     include 'View/Includes/adm/finalizarCadastro.php';
                 }
 
-                
             }else{
                 include 'View/Includes/initial.php';
             }
             
-
-
-
-
-
             echo '<body>';
 
         }else{

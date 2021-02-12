@@ -8,6 +8,7 @@
             <p>Deseja mesmo excluir?</p>
 
 
+            <input type="hidden" name="id-caixa" id="id-caixa" placeholder="" value="'<?php echo $_GET['id']; ?>'">';
         
 
             

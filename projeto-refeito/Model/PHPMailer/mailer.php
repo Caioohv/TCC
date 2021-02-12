@@ -9,6 +9,8 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer(true);
 
+$link = '';
+
 try {
 	$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 	$mail->isSMTP();
@@ -23,8 +25,8 @@ try {
 
 	$mail->isHTML(true);
 	$mail->Subject = 'Cadastro Gerencianet';
-	$mail->Body = 'email.php';
-	$mail->AltBody = "Acesse o link ".$_SESSION['url-email'];
+	$mail->Body = 'email.php?senha='.$_GET['senha'].'&link='.$link;
+	$mail->AltBody = "Acesse o link ".$link;
 
 	if($mail->send()) {
 		echo 'Email enviado com sucesso';

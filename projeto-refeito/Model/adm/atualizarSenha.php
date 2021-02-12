@@ -4,7 +4,7 @@ session_start();
 //incluindo o arquivo de conexão
 include_once '../conexao.php';
 
-    if(isset($_GET['url-email'])){
+    if(isset($_GET['link'])){
         //recebendo os dados que vieram do formulário
         $email_adm = $_GET['txtEmail'];
 
