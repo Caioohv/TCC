@@ -19,7 +19,8 @@ include '../conexao.php';
         $numero = $_POST['Numero'];
         $estado = $_POST['Estado'];
         $pais = $_POST['Pais'];
-        
+
+
         $horario_inicio_caixa = $_POST['hrrAbrir'];
         $horario_fim_caixa = $_POST['hrrFechar']; 
         
