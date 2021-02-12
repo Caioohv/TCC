@@ -13,7 +13,7 @@
             if($con -> connect_error){
                 die("Falha na conexão com o banco de dados: " . $con->connection_error);
             }
-            $sql = 'SELECT * FROM admin where id_adm';// = '.$_GET['id'].';';
+            $sql = 'SELECT * FROM admin where id_adm='.$_GET['id'].';';
             $n = mysqli_fetch_assoc(mysqli_query($con, $sql));
             ?>
                 <input type="email" name="txtEmail" id="txtEmail" class="caixaTexto"  required placeholder="Email" autofocus value="<?php echo $n['email_adm']?>">

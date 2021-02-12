@@ -11,7 +11,7 @@ if($con -> connect_error){
     die("Falha na conexão com o banco de dados: " . $con->connection_error);
 }
 
-$sql = "SELECT * FROM admin";// WHERE id_caixa like".$_POST['txtcod']." AND endereco_caixa like ".$_POST['txtlocal']." AND nm_caixa like ".$_POST['txtnome'].";";
+$sql = "SELECT * FROM admin ORDER BY nm_adm;";// WHERE id_caixa like".$_POST['txtcod']." AND endereco_caixa like ".$_POST['txtlocal']." AND nm_caixa like ".$_POST['txtnome'].";";
 $result = mysqli_query($con, $sql);
 
 if($result->num_rows > 0){

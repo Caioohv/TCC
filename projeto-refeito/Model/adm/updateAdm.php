@@ -11,7 +11,7 @@ include_once '../conexao.php';
         $cpf_adm = $_POST['txtCpf'];
 
         $id = $_SESSION['id-a'];
-        echo $id;
+        //echo $id;
         
         
 
