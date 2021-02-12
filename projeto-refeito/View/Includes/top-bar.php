@@ -30,19 +30,19 @@
 
             //Adm
             if($_GET['page']=='adm'){
-                echo '<li class="item-menu"><a href="index.php?page=cadastrarA">Cadastrar Admin</a></li>';
+                echo '<li class="item-menu-selected"><a href="index.php?page=cadastrarA">Cadastrar Admin</a></li>';
                 echo '<li class="item-menu"><a href="index.php?page=visualizarA">Visualizar Admin</a></li>';
-                echo '<li class="item-menu-selected"><a href="index.php?page=cadastrarC">Página dos Caixas</a></li>';
+                echo '<li class="item-menu"><a href="index.php?page=cadastrarC">Página dos Caixas</a></li>';
             }
             if($_GET['page']=='cadastrarA'){
                 echo '<li class="item-menu-selected"><a href="index.php?page=cadastrarA">Cadastrar Admin</a></li>';
                 echo '<li class="item-menu"><a href="index.php?page=visualizarA">Visualizar Admin</a></li>';
-                echo '<li class="item-menu"><a href="index.php?page=cadastrarC">Página do Administrador</a></li>';
+                echo '<li class="item-menu"><a href="index.php?page=cadastrarC">Página dos Caixas</a></li>';
             }
             if($_GET['page']=='visualizarA'){
                 echo '<li class="item-menu"><a href="index.php?page=cadastrarA">Cadastrar Admin</a></li>';
                 echo '<li class="item-menu-selected"><a href="index.php?page=visualizarA">Visualizar Admin</a></li>';
-                echo '<li class="item-menu"><a href="index.php?page=cadastrarC">Página do Administrador</a></li>';
+                echo '<li class="item-menu"><a href="index.php?page=cadastrarC">Página dos Caixas</a></li>';
             }
 
 

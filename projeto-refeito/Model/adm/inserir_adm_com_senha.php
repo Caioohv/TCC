@@ -1,14 +1,12 @@
 <?php
-
 session_start();
+
 //incluindo o arquivo de conexão
 include_once '../conexao.php';
 
     if(isset($_GET['url-email'])){
         //recebendo os dados que vieram do formulário
-        $cpf_adm = $_GET['txtCpf'];
         $email_adm = $_GET['txtEmail'];
-        $nm_adm = $_GET['txtNome'];
 
         //inserindo no banco de dados a query 
         $sql = "INSERT INTO admin (cpf_adm, email_adm, nm_adm) VALUES
@@ -41,4 +39,3 @@ include_once '../conexao.php';
     
 
 ?>
-

@@ -1,6 +1,8 @@
 <?php
+
 session_start();
-    include_once '../conexao.php';
+
+include_once '../conexao.php';
 
     if(isset($_POST['submit'])){
         //receber os dados do form
@@ -8,47 +10,26 @@ session_start();
         $nm_adm = $_POST['txtNome'];
         $cpf_adm = $_POST['txtCpf'];
 
-
-        $validasenha = -1;
-        if(isset($_POST['txtSenha'])){
-            $pass_adm = MD5($_POST['txtSenha']);
-            $validasenha = 1;
-        }else{
-            $validasenha = 0;
-        }
+        $id = $_SESSION['id-a'];
+        echo $id;
+        
         
 
         //criar comando sql
-        $sql = "";
-        if($validasenha == 1){
-            $sql = "UPDATE admin SET email='$email_adm', nome='$nm_adm' ,cpf='$cpf_adm' ,senha='$pass_adm' WHERE id_adm=" . $_SESSION['id-a'];
-        }else{
-            $sql = "UPDATE admin SET email='$email_adm', nome='$nm_adm' ,cpf='$cpf_adm' WHERE id_adm=" . $_SESSION['id-a'];
-        }
-
+        $sql = "UPDATE admin SET email_adm='$email_adm', nm_adm='$nm_adm' ,cpf_adm='$cpf_adm' WHERE id_adm=$id;";
         echo $sql;
-        echo $validasenha;
-        echo $pass_adm;
         
-        
+        $result = mysqli_query($con, $sql);
         
         // executar comando
-        if($con->query($sql) == TRUE){
-            ?>
-            <script>
-                alert("Alteração salva com sucesso!");
-                //window.location = "../../View/adm/";
-            </script>
-            <?php
+        if($result){
+            mysqli_close($con);
+            echo "Admin cadastrado com sucesso!";
+            header("location: ../../index.php?page=visualizarA");
         }else{
-            ?>
-                <script>
-                    alert("Erro ao alterar o registo - Valida senha: " +<?php echo $validasenha?>+"\nString sql:\n"+<?php echo $sql?>);
-                    //window.history.back();
-                </script>
-
-
-            <?php
+            echo '<p style="color: red; font-size: 3rem;"> Erro ao atualizar caixa</p>';
+            echo '<a href="../../index.php?page=visualizarA"> Retornar</a>';
+            mysqli_close($con);
         }
     }
 

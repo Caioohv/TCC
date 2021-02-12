@@ -19,7 +19,7 @@
             
             if($result){
                 echo '<p>Excluido com sucesso</p>';
-                echo '<?php header(location=index.php?page=visualizarC ?>';
+                echo '<?php header(location=index.php?page=visualizarA[[[ ?>';
             }
 
             $_SESSION['id-c'] = $_GET['id'];

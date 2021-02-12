@@ -45,6 +45,16 @@
                     $_POST['email-a'] = $_GET['id'];
                     include 'View/Includes/adm/excluir.php';//.$idcaixa;
                 }
+                if($_GET['page']=='adm'){
+                    header("location: index.php?page=visualizarA");
+                }
+                if($_GET['page']=='bymail'){
+
+
+
+                    
+                    include 'View/Includes/adm/finalizarCadastro.php';
+                }
 
                 
             }else{
