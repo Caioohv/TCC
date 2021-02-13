@@ -6,26 +6,21 @@ include_once '../conexao.php';
 
     if(isset($_GET['link'])){
         //recebendo os dados que vieram do formulário
-        $email_adm = $_GET['txtEmail'];
+        
 
         //inserindo no banco de dados a query 
-        $sql = "INSERT INTO admin (cpf_adm, email_adm, nm_adm) VALUES
-        ('$cpf_adm', '$email_adm', '$nm_adm');";
+        $sql = "UPDATE admin SET pass_adm=".$_GET.['senha']." WHERE ;
 
         echo $sql;
         
         $result = mysqli_query($con, $sql);
         if($result){
-            mysqli_close($con);
-
-            //encaminhando o email
-            $url = "localhost/TCC/projeto-refeito/Model/adm/inserir_adm_com_senha.php?email=$email_adm";
-            $_SESSION['url-email'] = $url;
+            mysqli_close($con);            
 
 
             
-            echo "Admin cadastrado com sucesso!";
-            header("location: ../../index.php?page=cadastrarA");
+            echo "Admin atualizado com sucesso!";
+            header("location: ../../index.php?page=visualizarA");
             
         }else{
             echo '<p style="color: red; font-size: 3rem;"> Erro ao cadastrar admin</p>';

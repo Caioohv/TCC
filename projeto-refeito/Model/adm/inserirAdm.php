@@ -1,8 +1,10 @@
 <?php
 
-function gerarSenha(){
+function gerarSenha($id){
 
     $senha = "";
+
+    //adcionando 
 
     //26
     $letras = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
@@ -41,7 +43,7 @@ include_once '../conexao.php';
         $cpf_adm = $_GET['txtCpf'];
         $email_adm = $_GET['txtEmail'];
         $nm_adm = $_GET['txtNome'];
-        $pass_adm = gerarSenha();
+        $pass_adm = gerarSenha($cpf_adm);
 
         //inserindo no banco de dados a query 
         $sql = "INSERT INTO admin (cpf_adm, email_adm, nm_adm, pass_adm) VALUES

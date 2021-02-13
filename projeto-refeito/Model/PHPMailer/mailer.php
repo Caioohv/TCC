@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer(true);
 
-$link = '';
+$link = 'http://localhost/TCC/projeto-refeito/Model/adm/atualizarSenha?';
 
 try {
 	$mail->SMTPDebug = SMTP::DEBUG_SERVER;
