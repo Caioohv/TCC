@@ -1,10 +1,12 @@
 <?php
 
-function gerarSenha($id){
+function gerarSenha($cpf){
 
-    $senha = "";
+    $senha = "035";
 
-    //adcionando 
+    //adcionando parte do cpf à senha
+    $splited = str_split($cpf);
+    $senha = $senha . $splited[5] . $splited[3] . $splited[7] . $splited[2] . $splited[1] . $splited[0];
 
     //26
     $letras = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
@@ -14,17 +16,17 @@ function gerarSenha($id){
     for($i = 0; $i < 4; $i++){
         //define uma letra aleatória
         $n = rand(0, 25);
-        $letra = $letras[$nmr];
+        $letra = $letras[$n];
         
         //define um número aleatório
         $n = rand(0, 9);
-        $numero = $numeros[$nmr];
+        $numero = $numeros[$n];
 
         //adciona os dois à senha
         $senha = $senha . $letra . $numero;
 
     }
-
+    echo $senha;
     return $senha;
 
 
@@ -38,7 +40,7 @@ session_start();
 //incluindo o arquivo de conexão
 include_once '../conexao.php';
 
-    if(isset($_GET['url-email'])){
+    if(isset($_GET['txtEmail'])){
         //recebendo os dados que vieram do formulário
         $cpf_adm = $_GET['txtCpf'];
         $email_adm = $_GET['txtEmail'];

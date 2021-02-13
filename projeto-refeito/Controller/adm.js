@@ -2,12 +2,12 @@
 
 
 function validarSenha() {
-    NovaSenha = document.getElementById('txtSenha').value;
-    CNovaSenha = document.getElementById('txtSenhaConfirm').value;
+    NovaSenha = document.getElementById('pass1').value;
+    CNovaSenha = document.getElementById('pass2').value;
     if (NovaSenha != CNovaSenha) {
         alert("As senhas não coincídem");
         event.preventDefault();
     }else{
-        alert("Cadastro efetuado com sucesso");
+        alert("Alteração efetuado com sucesso");
     }
 }
