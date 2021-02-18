@@ -1,9 +1,9 @@
 <div class="main">
-    <!-- <?php 
+    <!--  -->
+    <h4>Hora Local: <span><?php 
         date_default_timezone_set('America/Sao_Paulo');
         echo date("H:i");
-    ?> -->
-    <h4>Hora Local: </h4>
+    ?></span> </h4>
     <div class="filtro">
     
     <form action="index.php" method="GET" name="fdmPesquisa">
@@ -25,7 +25,7 @@
         
 
     </div>
-        <input type="submit" name="submit" class="btn-pesquisar" placeholder="Pesquisar">
+        <input type="submit" name="submit" class="btn-pesquisar" value="Pesquisar">
         
     </form>
     

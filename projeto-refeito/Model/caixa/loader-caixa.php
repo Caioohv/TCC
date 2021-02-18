@@ -69,20 +69,79 @@ function verificaHora($abertura, $fechamento, $statuscaixa){
 }
 
 function getSql(){
-    $sql = "SELECT * FROM caixa;";
+    $sql = " SELECT * FROM caixa ";
 
     if(isset($_GET['submit'])){
+        $setwhere = 0;
+        $addor = 0;
+
         $nome = $_GET['Nome'];
         $endereco = $_GET['Endereco'];
         $status = $_GET['Status'];
         $admin = $_GET['Admin'];
-        //$sql = "SELECT * FROM caixa WHERE nm_caixa like '". ";
+        
+        if($nome != ""){
+            if($addor==1){
+                $sql = $sql . " AND ";
+            }
+            if($setwhere == 0){
+                $sql = $sql . " WHERE ";
+                $setwhere = 1;
+            }
+            
+            $sql = $sql . " nm_caixa like '$nome%' ";
+            $addor = 1;
+
+        }
+        if($endereco != ""){
+            if($addor==1){
+                $sql = $sql . " AND ";
+            }
+            if($setwhere == 0){
+                $sql = $sql . "WHERE ";
+                $setwhere = 1;
+            }
+
+            $sql = $sql . "endereco like '%$endereco%'";
+            $addor = 1;
+
+        }
+        if($status != ""){
+            if($addor==1){
+                $sql = $sql . " AND ";
+            }
+            if($setwhere == 0){
+                $sql = $sql . "WHERE ";
+                $setwhere = 1;
+            }
+
+            $sql = $sql . "status_caixa = '$status'";
+            $addor = 1;
+
+        }
+        if($admin != ""){
+            if($addor==1){
+                $sql = $sql . " AND ";
+            }
+            if($setwhere == 0){
+                $sql = $sql . "WHERE ";
+                $setwhere = 1;
+            }
+
+            $sql = $sql . "fk_email_adm like '$admin%'";
+            $addor = 1;
+
+        }
+
+        
+
+        
 
 
     }
 
-
-
+    $sql = $sql . ";";
+    echo $sql;
     return $sql;
 }
 

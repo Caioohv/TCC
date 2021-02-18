@@ -38,7 +38,14 @@
     justify-items: center;
 }
 .main h4{
-    color: red;
+    color: var(--laranja);
+    font-size: 3rem;
+    font-family: 'Archivo', sans-serif;   
+    font-weight: 600;
+}
+.main span{
+    color: var(--cinza);
+    
 }
 .main .container{
     width: 100%;
