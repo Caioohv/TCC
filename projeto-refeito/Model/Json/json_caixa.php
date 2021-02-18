@@ -12,12 +12,12 @@ include_once 'Model/conexao.php';
 
     if($result->num_rows > 0){
         while($row = $result -> fetch_assoc()){
-            $objJson->cidade = .$row['cidade'];
-            $objJson->bairro = .$row['bairro'];
-            $objJson->rua = .$row['rua'];
-            $objJson->numero = .$row['numero'];
-            $objJson->estado = .$row['estado'];
-            $objJson->pais = .$row['pais'];
+            $objJson->cidade = $row['cidade'];
+            $objJson->bairro = $row['bairro'];
+            $objJson->rua = $row['rua'];
+            $objJson->numero = $row['numero'];
+            $objJson->estado = $row['estado'];
+            $objJson->pais = $row['pais'];
     
             $objJson = json_encode($objJson);
     

@@ -164,7 +164,13 @@ td{
     color: var(--cinza);
 }
 
+.txtaberto{
+    color: greenyellow;
+}
 
+.txtfechado{
+    color: red;
+}
 
 
 /* Utilização das fontes
