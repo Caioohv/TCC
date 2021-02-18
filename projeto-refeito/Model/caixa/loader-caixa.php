@@ -1,7 +1,7 @@
 
 <?php
 
-function verificaHora($abertura, $fechamento){
+function verificaHora($abertura, $fechamento, $statuscaixa){
 
     //formato: 12:00, 12:00
     //define horas
@@ -23,61 +23,45 @@ function verificaHora($abertura, $fechamento){
     //                          Hora local aqui
     //00:00 -------------- Abre --------------- Fecha ---------- 23:59
 
-    //testes
-    // echo $horaabre;
-    // echo '<br>';
-    // echo $minutoabre;
-    // echo '<br>';
-    // echo $horafecha;
-    // echo '<br>';
-    // echo $minutofecha;
-    // echo '<br>';
-    // echo $horalocal;
-    // echo '<br>';
-    // echo $minutolocal;
-    // echo '<br>';
-    // $localtime = localtime();
-    // $localtime_assoc = localtime(time(), true);
-    // print_r($localtime);
-    // echo '<br>';
-    // print_r($localtime_assoc);
-    
-
-    $aberto = '<span style="color: green">Aberto</span>';
-    $fechado = '<span style="color: red">Fechado</span>';
+    $aberto = '<span style="color: green">Aberto até '.$fechamento.'</span>';
+    $fechado = '<span style="color: red">Fechado até '.$abertura.'</span>';
     
 
     $resultado = $fechado;
-
-
+    
+    if($statuscaixa == "Ativo"){
     //se a hora local está dentro do horário de funcionamento, está funcionando.
-    if(($horalocal > $horaabre) && ($horalocal < $horafecha)){
-        
-        $resultado = $aberto;
-
-    //se a hora local é igual o abre ou o fecha, verifica os minutos.
-    }else if(($horalocal == $horaabre)){
-        
-        //Se o minuto local for maior ou igual o de abrir, está aberto, se não, está fechado.
-        if(($minutolocal >= $minutoabre)){
+        if(($horalocal > $horaabre) && ($horalocal < $horafecha)){
+            
             $resultado = $aberto;
-        }else{
-            $resultado = $fechado;
-        }
-        
 
-    //se a hora local está fora da hora de funcionamento, está fechado.
-    }else if(($horalocal == $horafecha)){
-        //Se o minuto local for maior ou igual
-        if(($minutolocal < $minutoabre)){
-            $resultado = $aberto;
+        //se a hora local é igual o abre ou o fecha, verifica os minutos.
+        }else if(($horalocal == $horaabre)){
+            
+            //Se o minuto local for maior ou igual o de abrir, está aberto, se não, está fechado.
+            if(($minutolocal >= $minutoabre)){
+                $resultado = $aberto;
+            }else{
+                $resultado = $fechado;
+            }
+            
+
+        //se a hora local está fora da hora de funcionamento, está fechado.
+        }else if(($horalocal == $horafecha)){
+            //Se o minuto local for maior ou igual
+            if(($minutolocal < $minutoabre)){
+                $resultado = $aberto;
+            }else{
+                $resultado = $fechado;
+            }
         }else{
+
             $resultado = $fechado;
-        }
+
+        }  
     }else{
-
+        $fechado = '<span style="color: red">Fechado</span>';
         $resultado = $fechado;
-
     }
 
 
@@ -85,9 +69,17 @@ function verificaHora($abertura, $fechamento){
 }
 
 function getSql(){
-    $sql = "SELECT * FROM caixa";
+    $sql = "SELECT * FROM caixa;";
 
-    
+    if(isset($_GET['submit'])){
+        $nome = $_GET['Nome'];
+        $endereco = $_GET['Endereco'];
+        $status = $_GET['Status'];
+        $admin = $_GET['Admin'];
+        //$sql = "SELECT * FROM caixa WHERE nm_caixa like '". ";
+
+
+    }
 
 
 
@@ -108,7 +100,7 @@ if($con -> connect_error){
 
 
 
-$sql = setSql();
+$sql = getSql();
 $result = mysqli_query($con, $sql);
 
 if($result->num_rows > 0){
@@ -125,7 +117,7 @@ if($result->num_rows > 0){
         $hrrfechar = $row['horario_fim_caixa']; 
 
 
-        $abertooufechado = verificaHora($hrrabrir, $hrrfechar);
+        $abertooufechado = verificaHora($hrrabrir, $hrrfechar, $row['status_caixa']);
 
         $statuscaixa = $row['status_caixa']."  -  ".$abertooufechado;
 

@@ -37,6 +37,9 @@
     justify-content: center;
     justify-items: center;
 }
+.main h4{
+    color: red;
+}
 .main .container{
     width: 100%;
     height: 100%;
@@ -164,12 +167,34 @@ td{
     color: var(--cinza);
 }
 
-.txtaberto{
-    color: greenyellow;
+.filtro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.caixafiltro{
+    border: none;
+    border-bottom: 2px solid var(--laranja);
+    padding: 1vh 1.5vw;
+    margin: 0 1vw;
+    font-family: 'Archivo', sans-serif;
 }
 
-.txtfechado{
-    color: red;
+select{
+    background-color: var(--branco);
+}
+.btn-pesquisar{
+    padding: 0.8vh 2.2vw 0.8vh 2.2vw;
+    margin: 4vh 1vw 0 1vw;
+    border-collapse: collapse;
+    border-style: none;
+    border-radius: 1rem;
+    font-family: 'Archivo', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--branco);
+    background-color: var(--laranja);
 }
 
 

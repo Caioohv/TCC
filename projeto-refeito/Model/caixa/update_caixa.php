@@ -25,7 +25,7 @@ include '../conexao.php';
         $horario_fim_caixa = $_POST['hrrFechar']; 
         
         //inserindo no banco de dados a querry 
-
+        $endereco = $pais .", ". $estado .", ". $cidade .", ". $bairro . ", ". $rua ." ". $numero;
 
         $fk_email_adm = $_SESSION['userId'];
     
@@ -33,18 +33,18 @@ include '../conexao.php';
         update caixa set
         nm_caixa = '$nm_caixa', horario_inicio_caixa='$horario_inicio_caixa', horario_fim_caixa='$horario_fim_caixa', 
         status_caixa='$status_caixa', fk_email_adm='$fk_email_adm', 
-        cidade='$cidade', bairro='$bairro', rua='$rua', numero='$numero', estado='$estado', pais='$pais'
+        cidade='$cidade', bairro='$bairro', rua='$rua', numero='$numero', estado='$estado', pais='$pais', endereco='$endereco' 
         where id_caixa = '$id_caixa';
         ";
         
-        echo $result;
+        //echo $result;
 
         //echo $result;
         //executando querry
         $result = mysqli_query($con, $result);
         if($result){
             mysqli_close($con);
-            echo "Caixa cadastrado com sucesso!";
+            echo "Caixa atualizado com sucesso!";
             header("location: ../../index.php?page=visualizarC");
             
         }else{
