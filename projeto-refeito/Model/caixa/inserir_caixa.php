@@ -7,6 +7,7 @@ function getCoordenadas($endereco){
 
     $key = "AIzaSyCoqvTufKcOjkclTixbx1upyq_WLrAt15c";
     $endereco = urlencode($endereco);
+   // 
 
     $url = "https://maps.googleapis.com/maps/api/geocode/json?address=$endereco&key=$key";
     $lat_long = get_object_vars(json_decode(file_get_contents($url)));
