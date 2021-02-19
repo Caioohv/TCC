@@ -141,7 +141,7 @@ function getSql(){
     }
 
     $sql = $sql . ";";
-    echo $sql;
+    //echo $sql;
     return $sql;
 }
 
@@ -154,7 +154,6 @@ include_once 'Model/conexao.php';
 if($con -> connect_error){
     die("Falha na conexão com o banco de dados: " . $con->connection_error);
 }
-
 
 
 

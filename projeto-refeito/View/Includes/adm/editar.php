@@ -19,7 +19,12 @@
                 <input type="email" name="txtEmail" id="txtEmail" class="caixaTexto"  required placeholder="Email" autofocus value="<?php echo $n['email_adm']?>">
                 <input type="text" name="txtNome" id="txtNome" class="caixaTexto"  required placeholder="Nome" value="<?php echo $n['nm_adm']?>">
                 <input type="text" name="txtCpf" id="txtCpf" class="caixaTexto"  required placeholder="CPF" value="<?php echo $n['cpf_adm']?>">
-                
+                <?php
+                    if($n['email_adm'] == $_SESSION['userId']){
+                        echo '<input type="hidden" name="txtSenhaAntiga" id="txtSenhaAntiga" class="caixaTexto" placeholder="" value="'.$n['pass_adm'].'">';
+                        echo '<input type="password" name="txtSenha" id="txtSenha" class="caixaTexto" placeholder="Nova senha" value="">';
+                    }
+                ?>
                 <br><br>
             <!-- Botão -->
             <?php

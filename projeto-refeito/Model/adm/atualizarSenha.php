@@ -10,7 +10,7 @@ include_once '../conexao.php';
         $lastpass = $_GET['antiga'];
 
         //inserindo no banco de dados a query 
-        $sql = "UPDATE admin SET pass_adm='".$pass."' WHERE pass_adm='".$lastpass."';";
+        $sql = "UPDATE admin SET pass_adm='".$pass."' WHERE email_adm='".$lastpass."';";
 
         echo $sql;
         

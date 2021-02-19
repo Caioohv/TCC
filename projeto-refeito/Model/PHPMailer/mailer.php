@@ -13,7 +13,7 @@ $email = $_GET['email'];
 
 
 // $link = 'http://localhost/TCC/projeto-refeito/Model/adm/atualizarSenha?senha='.$senha.'&link=true';
-$link = 'http://localhost/TCC/projeto-refeito/alterarSenha.php?senha='.$senha;
+$link = 'http://localhost/TCC/projeto-refeito/alterarSenha.php?email='.$email;
 
 $conteudo = "
 	<h1>Confirmação de Cadastro</h1>

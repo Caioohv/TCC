@@ -20,10 +20,10 @@
 
                 <?php 
                 
-                     $senha = $_GET['senha'];
+                     $email = $_GET['email'];
 
                 ?>
-                <input type="hidden" name="antiga" id="antiga" class="caixaTexto" value="<?php echo $senha; ?>">
+                <input type="hidden" name="antiga" id="antiga" class="caixaTexto" value="<?php echo $email; ?>">
 
                 <br><br>
             <!-- Botão -->

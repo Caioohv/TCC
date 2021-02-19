@@ -16,7 +16,18 @@ include_once '../conexao.php';
         
 
         //criar comando sql
-        $sql = "UPDATE admin SET email_adm='$email_adm', nm_adm='$nm_adm' ,cpf_adm='$cpf_adm' WHERE id_adm=$id;";
+        $sql = "UPDATE admin SET email_adm='$email_adm', nm_adm='$nm_adm' ,cpf_adm='$cpf_adm'";
+
+        if((isset($_POST['txtSenha'])) && ($_POST['txtSenha'] != "")){
+            if($_POST['txtSenhaAntiga'] != $_POST['txtSenha']){
+                $senhanova = $_POST['txtSenha'];
+                $sql = $sql . ", pass_adm='$senhanova'";
+            }
+        }
+
+        $sql = $sql . " WHERE id_adm=$id;";
+
+
         echo $sql;
         
         $result = mysqli_query($con, $sql);
