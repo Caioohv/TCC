@@ -30,7 +30,7 @@ include_once '../conexao.php';
         }
     }else{
         //recebendo os dados que vieram do formulário
-        $pass = $_POST['pass1'];
+        $pass = $_GET['pass1'];
  
         //inserindo no banco de dados a query 
         $sql = "UPDATE admin SET pass_adm=".$pass." WHERE emaill_adm=".$_SESSION['userId'];
