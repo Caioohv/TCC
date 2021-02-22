@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_wp2.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-hdpi\\wp2.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_campotexto.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\drawable\\campotexto.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_maps.jpg.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-anydpi-v26\\maps.jpg"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_maps2.jpg.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-anydpi-v26\\maps2.jpg"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_backgoundicon.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-hdpi\\backgoundicon.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botao.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\drawable\\botao.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_mobilewp1.jpg.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-hdpi\\mobilewp1.jpg"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_imagem2.jpg.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-hdpi\\imagem2.jpg"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_caixas.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\layout\\view_caixas.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\font_fonts.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\font\\fonts.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\xamp\\htdocs\\TCC\\Android\\defineLocal\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    }
+]
