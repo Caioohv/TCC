@@ -1,6 +1,0 @@
-com/ifmg/definelocal/BuildConfig.java
- com.ifmg.definelocal.BuildConfig
-com/ifmg/definelocal/visualizar_horarios.java
- com.ifmg.definelocal.visualizar_horarios
-com/ifmg/definelocal/MainActivity.java
- com.ifmg.definelocal.MainActivity
