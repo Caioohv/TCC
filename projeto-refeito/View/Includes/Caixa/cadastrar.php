@@ -38,7 +38,7 @@
             <!-- Botão -->
             <div class="btn">
                 <input type="submit" name="submit" value="Cadastrar" class="btn-cad-caixa">
-                <a href='Model/Json/json_caixa.php'>Cadastrar</a>
+                <!-- <a href='Model/Json/json_caixa.php'>Cadastrar</a> -->
             </div>
             
         </form>

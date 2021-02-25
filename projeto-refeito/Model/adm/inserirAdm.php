@@ -29,6 +29,7 @@ function gerarSenha($cpf){
     echo $senha;
     return $senha;
 
+    //CaioCrypto
 
 }
 
