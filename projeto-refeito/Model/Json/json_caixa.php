@@ -13,7 +13,7 @@ include_once 'Model/conexao.php';
     $arrayCaixas = array();
     if($result->num_rows > 0){
         while($row = $result -> fetch_assoc()){
-            array_push($arrayCaixas, array("Latitute"=>$row["latitude"], "Longetude"=>$row["longetude"]));
+            array_push($arrayCaixas, array("Id"=>$row["id_caixa"],"Latitute"=>$row["latitude"], "Longetude"=>$row["longetude"]));
            
         }
         $objJson = json_encode($arrayCaixas);
