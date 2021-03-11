@@ -103,9 +103,11 @@
     text-decoration: none;
     background-color: var(--branco);
     border-radius: 1rem;
+    transition: all 0.3s ease;
 }
 .logout:hover{
-    color: var(--azul);
+    color: var(--branco);
+    background-color: var(--laranja);
 }
 
 .img-gn{

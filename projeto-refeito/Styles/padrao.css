@@ -226,7 +226,8 @@ select{
     cursor: pointer;
 }
 .btn-pesquisar:hover{
-    background-color: var(--azul);
+    background-color: var(--branco);
+    color: var(--laranja);
 }
 
 /* Utilização das fontes
