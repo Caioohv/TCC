@@ -181,7 +181,11 @@ if($result->num_rows > 0){
 
         echo '<td> '.$statuscaixa.'</td>';
         echo'<td> '.$row['fk_email_adm'].'</td>';
-        echo '<td><div class="botoesEdit"><a href="index.php?page=editarC&id='.$id.'">Editar</a> <a href="index.php?page=excluirC&id='.$id.'">Excluir</a></div></td>';
+        
+        echo '<td><div class="links-fas">';
+        echo '<a class="link-table" href="index.php?page=editarC&id='.$row['id_caixa'].'"><i class="fas fa-edit"></i></a>
+        <a class="link-table" href="index.php?page=excluirC&id='.$row['id_caixa'].'"><i class="fas fa-trash"></i></a>';
+        echo '</div></td>';
         echo '</tr>';
     }
 }

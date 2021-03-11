@@ -54,6 +54,9 @@
             <div class="btn">
                 <input type="submit" name="submit" value="Atualizar" class="btn-cad-caixa">
             </div>
+            <div class="btn">
+                <a href="javascript:void(0)" onClick="history.go(-1); return false;" class="btn-voltar">Voltar</a>
+            </div>
             
         </form>
     </div>

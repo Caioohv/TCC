@@ -1,9 +1,17 @@
 <header class="head">
-<img src="images/logo-s-texto.jpg" alt="Gerencianet" height="60vh" class="img-gn">
+    
+
     <nav class="top-nav">
+
+    <div class="img-gn">
+        <img src="images/logo-s-texto.jpg" alt="Gerencianet" height="60vh">
+    </div>
         
         <ul class="link-list">
             
+        
+
+
         <?php
         if(isset($_GET['page'])){
             if($_GET['page']=='initial'){

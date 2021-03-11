@@ -87,8 +87,10 @@ if($result->num_rows > 0){
             <td><?php echo $row['cpf_adm']?></td>
             <td><?php echo $row['email_adm']?></td> 
             <td>
-                <a class="link-table" href="index.php?page=editarA&id=<?php echo $row['id_adm']?>">Editar</a>
-                <a class="link-table" href="index.php?page=excluirA&id=<?php echo $row['id_adm']?>">Excluir</a>
+                <div class="links-fas">
+                    <a class="link-table" href="index.php?page=editarA&id=<?php echo $row['id_adm']?>"><i class="fas fa-edit"></i></a>
+                    <a class="link-table" href="index.php?page=excluirA&id=<?php echo $row['id_adm']?>"><i class="fas fa-trash"></i></a>
+                </div>
             </td>  
             
         </tr>

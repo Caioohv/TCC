@@ -82,7 +82,16 @@
     border-bottom: 1px solid var(--cinza);
     font-family: 'Archivo', sans-serif;
     color: var(--cinza);
+    transition: all 0.3s ease;
+    
 }
+
+
+.form-cad-caixa:focus{
+    border-bottom: 20px solid var(--azul);
+}
+
+
 .form-cad-caixa select{
     padding-right: 4.7vw;
     background-color: var(--branco);
@@ -105,6 +114,12 @@
     padding: 1.75vh 1vw 1vh 1vw;
     font-size: 2.5rem;
     border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn input:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
 }
 .div-time{
     display: flex;
@@ -186,6 +201,11 @@ td{
     padding: 1vh 1.5vw;
     margin: 0 1vw;
     font-family: 'Archivo', sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.caixafiltro:focus{
+    border-bottom: 2px solid var(--azul);
 }
 
 select{
@@ -202,8 +222,12 @@ select{
     font-weight: 600;
     color: var(--branco);
     background-color: var(--laranja);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
-
+.btn-pesquisar:hover{
+    background-color: var(--azul);
+}
 
 /* Utilização das fontes
 Bebas Neue Regular
@@ -215,3 +239,41 @@ font-family: 'Archivo', sans-serif;
 
 
 */
+
+
+
+.links-fas{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+.links-fas i{
+    background-color: var(--branco);
+    color: var(--laranja);
+    transition: all 0.3s ease;
+}
+.links-fas i:hover{
+    background-color: var(--branco);
+    color: var(--azul);
+    
+}
+
+
+.btn-voltar{
+    background-color: var(--laranja);
+    text-decoration: none;
+    color: var(--branco);
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    margin: 0vh 2vw 2vh 2vw;
+    padding: 1.75vh 1vw 1vh 1vw;
+    font-size: 2.5rem;
+    border-radius: 1rem; 
+    transition: all 0.3s ease;
+}
+.btn-voltar:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
+}
